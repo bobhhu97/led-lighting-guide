@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LED 光源选购与灯光设计指南 · 筒灯 / 射灯 / 灯带</title>
+<style>
+:root{
+  --brand:#2b4f63; --brand-l:#3d6d87; --accent:#b8792a;
+  --ink:#232323; --muted:#6d6a64; --line:#e6e2da;
+  --bg:#ffffff; --soft:#faf8f4; --warn:#fff8ec; --warnline:#e0b25c;
+  --ok:#f2f7f4; --okline:#7fa88f; --bad:#fdf3f2; --badline:#c98b83;
+}
+*{box-sizing:border-box;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,sans-serif;
+  color:var(--ink); line-height:1.85; margin:0; background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:980px;margin:0 auto;padding:56px 48px 96px;}
+h1{
+  font-size:2.05em; line-height:1.35; color:var(--brand); letter-spacing:.01em;
+  margin:0 0 6px; padding-bottom:18px; border-bottom:4px solid var(--brand);
+}
+h1 + h3{color:var(--accent); font-weight:600; font-size:1.02em; margin:14px 0 22px; letter-spacing:.04em;}
+h2{
+  font-size:1.42em; color:var(--brand); margin:58px 0 20px; padding:10px 0 10px 16px;
+  border-left:6px solid var(--brand); background:linear-gradient(90deg,var(--soft),transparent);
+  page-break-after:avoid;
+}
+h3{font-size:1.14em; color:#23414f; margin:38px 0 14px; padding-bottom:7px;
+   border-bottom:1px solid var(--line); page-break-after:avoid;}
+h4{font-size:1.02em;color:var(--accent);margin:26px 0 10px;page-break-after:avoid;}
+p{margin:13px 0;}
+a{color:var(--brand-l);text-decoration:none;border-bottom:1px dotted var(--brand-l);}
+strong{color:#16323d;}
+em{font-style:normal;color:var(--accent);font-weight:600;}
+blockquote{margin:20px 0;padding:16px 22px;background:var(--warn);
+  border-left:4px solid var(--warnline);border-radius:0 6px 6px 0;color:#5a4526;}
+blockquote p{margin:7px 0;}
+blockquote strong{color:#8a5a12;}
+blockquote.std{background:var(--ok);border-left-color:var(--okline);color:#2f4a3d;}
+blockquote.std strong{color:#245240;}
+blockquote.no{background:var(--bad);border-left-color:var(--badline);color:#5c3a36;}
+blockquote.no strong{color:#8c4a41;}
+hr{border:0;border-top:1px solid var(--line);margin:52px 0;}
+ul,ol{padding-left:26px;margin:13px 0;}
+li{margin:7px 0;}
+li > strong:first-child{color:#16323d;}
+.tw{overflow-x:auto;margin:22px 0;}
+table{width:100%;border-collapse:collapse;font-size:.9em;box-shadow:0 1px 3px rgba(0,0,0,.05);min-width:640px;}
+.tw > table{margin:0;}
+th{background:var(--brand);color:#fff;font-weight:600;text-align:left;
+   padding:10px 12px;border:1px solid #23414f;font-size:.95em;white-space:nowrap;}
+td{padding:9px 12px;border:1px solid var(--line);vertical-align:top;}
+tbody tr:nth-child(even){background:var(--soft);}
+tbody tr:hover{background:#f1f5f8;}
+.na{color:#a09a90;font-style:italic;}
+code{font-family:"SF Mono",Menlo,Consolas,monospace;background:#eef2f4;color:#23414f;
+  padding:2px 6px;border-radius:4px;font-size:.88em;}
+pre{background:#1e2a30;color:#dbe7ec;padding:20px 22px;border-radius:8px;
+  overflow-x:auto;font-size:.86em;line-height:1.75;page-break-inside:avoid;}
+pre code{background:none;color:inherit;padding:0;font-size:1em;}
+figure{margin:30px 0;padding:22px;background:var(--soft);border:1px solid var(--line);
+  border-radius:10px;page-break-inside:avoid;}
+figure svg{width:100%;height:auto;display:block;background:#fff;border-radius:6px;}
+figcaption{margin-top:14px;text-align:center;color:var(--muted);font-size:.86em;letter-spacing:.02em;}
+.toc{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:20px 26px;margin:30px 0 44px;}
+.toc > p:first-child{font-weight:700;color:var(--brand);margin-top:0;}
+.toc ul{list-style:none;padding-left:0;margin:0;columns:2;column-gap:34px;}
+.toc li{margin:6px 0;break-inside:avoid;}
+.toc a{border:0;}
+.chips{margin:16px 0;}
+.chip{display:inline-block;background:var(--soft);border:1px solid var(--line);
+  border-radius:14px;padding:2px 11px;margin:3px 5px 3px 0;font-size:.85em;color:#3c5866;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 26px;}
+@media(max-width:760px){.grid2{grid-template-columns:1fr;} .wrap{padding:32px 20px 60px;} .toc ul{columns:1;}}
+@media print{
+  @page{size:A4;margin:16mm 14mm;}
+  body{line-height:1.72;font-size:10pt;}
+  .wrap{max-width:none;padding:0;}
+  figure,table,pre,blockquote{page-break-inside:avoid;}
+  a{color:var(--ink);border:0;}
+  .toc{page-break-after:always;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>LED 光源选购与灯光设计指南</h1>
+<h3>筒灯 · 射灯（轨道 / 磁吸） · 灯带 —— 从参数、技术路线到布光落地的完整手册</h3>
+
+<blockquote>
+<p><strong>编写说明：</strong>本指南的技术阈值以中国现行工程建设标准为准 —— <strong>GB/T 50034-2024《建筑照明设计标准》</strong>（2024-08-01 实施，替代 GB 50034-2013）与强制性规范 <strong>GB 55016-2021《建筑环境通用规范》</strong>；产品实测数据主要来自 DIALux 官方光度库（厂家上传）、品牌官网规格页、工业品渠道与主流媒体报道。</p>
+<p><strong>关于"待核实"：</strong>凡是厂商未公开、或本轮检索未能从权威页面取到数值的字段，一律标注 <span class="na">待核实</span>，<strong>不作推测填充</strong>。国内品牌（欧普、雷士、三雄、松下等）官网参数表多为 JS 动态渲染，公开数值零散，这是行业现状而非本指南疏漏。价格随促销与渠道波动极大，全部标注"约"，仅供量级参考。</p>
+</blockquote>
+
+<div class="toc">
+<p>目录</p>
+<ul>
+<li><a href="#ch0">第 0 章 十分钟看懂关键指标</a></li>
+<li><a href="#ch1">第 1 章 国家标准：哪些是硬指标</a></li>
+<li><a href="#ch2">第 2 章 技术路线总览与优劣</a></li>
+<li><a href="#ch3">第 3 章 筒灯（Downlight）</a></li>
+<li><a href="#ch4">第 4 章 射灯 / 轨道灯 / 磁吸灯</a></li>
+<li><a href="#ch5">第 5 章 灯带（Strip / COB / 霓虹）</a></li>
+<li><a href="#ch6">第 6 章 灯光设计实操</a></li>
+<li><a href="#ch7">第 7 章 调光与智能控制生态</a></li>
+<li><a href="#ch8">第 8 章 布线、安装与验收</a></li>
+<li><a href="#ch9">第 9 章 预算、品牌与采购策略</a></li>
+<li><a href="#ch10">第 10 章 选购清单与避坑总表</a></li>
+<li><a href="#src">附录：来源与延伸阅读</a></li>
+</ul>
+</div>
+
+<hr />
+
+<h2 id="ch0">第 0 章 十分钟看懂关键指标</h2>
+
+<p>买灯之前，先把这套"度量衡"搞清楚。市场上 90% 的误导都发生在单位与口径上：<strong>用瓦数代替亮度、用 Ra 代替显色、用"无频闪"代替实测数值、用芯片光效代替整灯光效</strong>。</p>
+
+<h3>0.1 光度：光通量、照度、光强、亮度</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>量</th><th>符号 / 单位</th><th>是什么</th><th>选购时怎么用</th></tr></thead>
+<tbody>
+<tr><td>光通量</td><td>Φ，流明 lm</td><td>光源发出的光的总量</td><td><strong>唯一能代表"有多亮"的量。</strong>瓦数（W）只是耗电，不代表亮度</td></tr>
+<tr><td>照度</td><td>E，勒克斯 lx = lm/m²</td><td>落在被照面上的光密度</td><td><strong>家居设计唯一有法定标准值的量</strong>（GB/T 50034-2024 表 5.2.1）</td></tr>
+<tr><td>光强</td><td>I，坎德拉 cd</td><td>某方向上的发光强度（CBCP = 中心光强）</td><td>射灯重点照明的核心指标；E = I / D²</td></tr>
+<tr><td>亮度</td><td>L，cd/m²</td><td>人眼看到的"发光面有多刺眼"</td><td>眩光控制的直接对象；国标对灯具表面亮度有限值</td></tr>
+<tr><td>光效</td><td>lm/W</td><td>每瓦电能换出多少流明</td><td>判断方案档次：家用整灯 <strong>70–130 lm/W</strong> 合理，&lt;60 属低端</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote class="std">
+<p><strong>GB/T 50034-2024 §3.2.6 能效门槛（初始光效 lm/W）</strong>：非定向 LED 灯 2700K/3000K ≥ <strong>85</strong>，3500K/4000K/5000K ≥ <strong>95</strong>；定向 PAR30/PAR38 为 85 / 90；LED 平板灯 95 / 105。<strong>注：Ra ≥ 90 时光效限值可降低 10 lm/W</strong>（高显色本身要牺牲光效，这条是国标的明文补偿）。</p>
+<p>同条还规定：初始光通量应为额定值的 90%~120%；3000h 光通维持率 ≥96%、6000h ≥92%。</p>
+</blockquote>
+
+<h3>0.2 平均照度怎么算（这一步决定你要买几只灯）</h3>
+
+<pre><code>E = N × Φ × UF × MF / A
+
+E  平均照度 lx          N  灯具数量
+Φ  单灯光通量 lm        A  房间面积 m²
+UF 利用系数（家庭常取 0.4–0.6；浅色墙、高反射可取 0.6–0.8）
+MF 维护系数（新装 0.9 / 清洁环境 0.8 / 少维护 0.7 / 厨房油烟重 0.6）</code></pre>
+
+<p><strong>算例：</strong>20㎡ 客厅，目标 150 lx，单灯 800 lm，UF 0.5，MF 0.8 → N = 150×20 / (800×0.5×0.8) ≈ <strong>9.4 只</strong>。</p>
+
+<blockquote class="no">
+<p><strong>"无主灯暗得像停车场"的数学来源：</strong>20㎡ 客厅装 6 只 7W 筒灯（按 700 lm/只），UF 0.5、MF 0.8 → 地面照度仅约 <strong>84 lx</strong>；装 8 只也只有约 <strong>112 lx</strong>。而"起居室一般活动"的标准值是 <strong>100 lx</strong>，"书写阅读"要 <strong>300 lx</strong> —— 也就是说，常见的"无主灯套餐"刚好卡在一般活动的及格线上，<strong>看书写作业差 2–3 倍</strong>。不是无主灯不好，是没算照度就定灯数。</p>
+</blockquote>
+
+<h3>0.3 色温 CCT 与色表</h3>
+
+<p>国标表 4.5.1 把色表分三档：<strong>暖 &lt;3300K</strong>（客房、卧室、病房、酒吧）、<strong>中间 3300–5300K</strong>（办公室、教室、阅览室、诊室）、<strong>冷 &gt;5300K</strong>（热加工车间、高照度场所）。</p>
+
+<figure>
+<svg viewBox="0 0 900 210" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <defs><linearGradient id="cct" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#ffb46b"/><stop offset="18%" stop-color="#ffd39b"/>
+    <stop offset="40%" stop-color="#fff2d8"/><stop offset="62%" stop-color="#f6f7f2"/>
+    <stop offset="84%" stop-color="#dfeaf5"/><stop offset="100%" stop-color="#cfe0f2"/>
+  </linearGradient></defs>
+  <rect x="20" y="26" width="860" height="52" rx="10" fill="url(#cct)"/>
+  <text x="30" y="60" font-size="13" fill="#5a3a12" font-weight="600">1800K</text>
+  <text x="196" y="60" font-size="13" fill="#5a4a22">2700K</text>
+  <text x="362" y="60" font-size="13" fill="#4a4a44">3500K</text>
+  <text x="528" y="60" font-size="13" fill="#33444f">4000K</text>
+  <text x="694" y="60" font-size="13" fill="#2b4256">5300K</text>
+  <text x="820" y="60" font-size="13" fill="#2b4256">6500K</text>
+  <g font-size="12.5" fill="#3b3b36">
+    <line x1="196" y1="78" x2="196" y2="104" stroke="#8a8a82"/><text x="120" y="122">暖 · 卧室/餐厅</text>
+    <line x1="362" y1="78" x2="362" y2="104" stroke="#8a8a82"/><text x="300" y="122">中性 · 客厅/厨房</text>
+    <line x1="528" y1="78" x2="528" y2="104" stroke="#8a8a82"/><text x="470" y="122">偏冷 · 书房/卫生间</text>
+    <line x1="694" y1="78" x2="694" y2="104" stroke="#8a8a82"/><text x="660" y="122">冷 · 车库/工作间</text>
+  </g>
+  <rect x="20" y="140" width="860" height="48" rx="8" fill="#fff8ec" stroke="#e0b25c"/>
+  <text x="38" y="161" font-size="13" fill="#8a5a12" font-weight="600">国标 §4.5.2（强制口径）</text>
+  <text x="38" y="180" font-size="12.5" fill="#5a4526">室内夜间长期工作或停留的房间，相关色温不宜高于 4000K；室外不宜高于 5000K。</text>
+</svg>
+<figcaption>色温分档与国标对"夜间高色温"的限制。卧室、儿童房夜间尤其应压低色温。</figcaption>
+</figure>
+
+<h3>0.4 显色：Ra、R9 与 TM-30</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>指标</th><th>含义</th><th>局限</th><th>家庭怎么选</th></tr></thead>
+<tbody>
+<tr><td><strong>Ra</strong>（一般显色指数）</td><td>R1–R8 共 8 个中间色样的平均保真度，满分 100</td><td>只是平均值，<strong>不含深红 R9</strong>；两个 Ra=80 的灯可能一个增饱和、一个减饱和</td><td>全屋 Ra ≥ 90（国标最低 80）</td></tr>
+<tr><td><strong>R9</strong>（特殊显色指数）</td><td>深红色样的显色能力，可为负</td><td>大多数电商页不标</td><td><strong>R9 &gt; 50 合格，优选 &gt; 80</strong>；厨房生鲜、穿衣镜、化妆必查</td></tr>
+<tr><td><strong>TM-30 Rf / Rg</strong></td><td>99 个色样、CAM02-UCS 空间；Rf = 保真度（0–100），Rg = 色域/饱和度（100 为适中）</td><td>国内公开数据稀少</td><td>能查到就看 <strong>Rf ≥ 90、Rg 95–105</strong>；Rg 过高会失真</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote class="std">
+<p><strong>GB 55016-2021 §3.3.5（强制）</strong>：长时间工作或停留的场所 —— 一般显色指数 Ra ≥ <strong>80</strong>，特殊显色指数 R9 ≥ <strong>0</strong>，同类产品色容差 ≤ <strong>5 SDCM</strong>。<strong>§3.3.8</strong>：辨色要求高的场所（绘画、彩色织物、化妆台、手术室、美术教室等）Ra ≥ <strong>90</strong>。</p>
+<p>这就是为什么 GB/T 50034-2024 住宅表里只有"卫生间化妆台"一栏的 Ra 要求是 90 —— 因为它是住宅里唯一需要辨色的功能面。</p>
+</blockquote>
+
+<h3>0.5 色容差 SDCM 与 Duv：为什么"同色温"会变成"两种白"</h3>
+
+<p>SDCM（麦克亚当椭圆）描述同标称色温下的实际色偏差：<strong>1 SDCM 为人眼勉强分辨的临界值；&gt;1 普通人可辨；3 SDCM 明显；&gt;5 一眼看出</strong>。人眼对绿色区最敏感。关键在于 —— <strong>同一厂家同一型号的不同批次也可能波动 2–3 SDCM</strong>。</p>
+
+<p>Duv 描述偏离黑体轨迹的方向：<strong>正偏绿、负偏粉紫</strong>。同为 3000K，Duv +0.002 与 −0.003 会呈现"偏黄绿"与"偏橙粉"两种观感。</p>
+
+<blockquote class="no">
+<p><strong>实操结论：</strong>大面积安装必须<strong>一次买齐同批次并留 10–15% 余量</strong>；敏感项目在合同里写明 ≤3 SDCM、要求批次光色报告并抽样光谱检测。混批安装 = 一面墙两种白，且无法事后补救。</p>
+</blockquote>
+
+<h3>0.6 眩光：UGR 与遮光角</h3>
+
+<p><strong>UGR（统一眩光值）是"空间参数"不是"灯具参数"</strong> —— 同一只灯在不同安装高度、间距、墙面反射率下算出的 UGR 不同，厂商标称值多为标准实验室条件下的参考值。分级参考：&lt;13 几乎无感；13–19 有眩光感但不刺眼（办公室/教室/会议室）；19–22 明显不适；≥22 一般不宜室内。</p>
+
+<blockquote class="std">
+<p><strong>GB 55016-2021 §3.3.4（强制）</strong>：长时间视觉作业的场所，UGR 不应高于 <strong>19</strong>。</p>
+<p><strong>GB/T 50034-2024 §4.3.1 表 4.3.1-1 遮光角</strong>（开敞式/格栅式灯具）：发光体平均亮度 1–20 kcd/m² → ≥10°；20–50 → ≥15°；50–500 → ≥<strong>20°</strong>；&gt;500 → ≥<strong>30°</strong>。家装筒射灯的 LED 发光体亮度普遍落在 &gt;50 kcd/m² 档，即遮光角应 ≥20°，选深杯（≥30°）更保险。</p>
+<p><strong>§4.3.3</strong>：有视觉显示终端（VDT，即看电视/显示器）的场所，与灯具中垂线成 65°–90° 范围内的灯具平均亮度限值：屏幕亮度 &gt;200 cd/m² 时，亮背景暗字体 ≤3000 cd/m²、暗背景亮字体 ≤1500 cd/m²；屏幕 ≤200 cd/m² 时分别为 1500 / 1000 cd/m²。</p>
+</blockquote>
+
+<h3>0.7 频闪：PstLM 与 SVM（国标强制）</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>指标</th><th>评价对象</th><th>国标限值</th><th>条款</th></tr></thead>
+<tbody>
+<tr><td><strong>PstLM</strong>（闪变指数）</td><td>低频可见闪烁（&lt;80Hz）</td><td>不应大于 <strong>1.0</strong>（所有场所）</td><td>GB/T 50034-2024 §4.4.1；GB 55016 §3.3.7</td></tr>
+<tr><td><strong>SVM</strong>（频闪效应可视度）</td><td>80Hz 以上不可见频闪（引起头痛、视疲劳）</td><td>人员长期工作场所 ≤ <strong>1.3</strong></td><td>GB/T 50034-2024 §4.4.2</td></tr>
+<tr><td><strong>SVM（儿童青少年）</strong></td><td>同上</td><td>≤ <strong>1.0</strong></td><td>GB 55016-2021 §3.3.7</td></tr>
+<tr><td>波动深度</td><td>光输出波形波动</td><td>GB/T 31831 表 12：f≤9Hz &lt;0.288%；9–3125Hz ≤ f×0.08/2.5 (%)；&gt;3125Hz 无限制</td><td>GB/T 31831《LED 室内照明应用技术要求》</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote class="no">
+<p><strong>手机相机测频闪只能粗筛。</strong>CMOS 滚动快门与光源调制频率混叠，几乎所有灯都可能拍出条纹 —— 它既可能拍到人眼看不到的高频波动，也可能漏掉真实问题。<strong>真正能作为验收依据的是厂家提供的 PstLM / SVM 实测报告（IEC TR 61547-1 方法）</strong>，不是"无可视频闪"四个字。</p>
+</blockquote>
+
+<h3>0.8 蓝光危害与光生物安全</h3>
+
+<p>按 GB/T 20145（等同 CIE S 009 / IEC 62471）分四档，按曝光时限定义：<strong>RG0 无危险</strong>（10000s 内不造成视网膜蓝光危害）、RG1（100s）、RG2（0.25s）、RG3（更短瞬间即有害）。</p>
+
+<blockquote class="std">
+<p><strong>GB 55016-2021 §3.3.6（强制）</strong>：儿童及青少年长时间学习或活动的场所应选用 <strong>RG0</strong> 灯具；其他人员长时间工作或停留的场所应选用 RG0 或 RG1，或满足灯具标记的视看距离要求的 RG2；<strong>不应使用 RG3</strong>。</p>
+<p>依据 IEC TR 62778：单位光通的蓝光危害效应与色温强相关，<strong>色温越高危害可能性越大</strong>。这与"夜间不宜高于 4000K"是同一件事的两面。</p>
+</blockquote>
+
+<h3>0.9 寿命与光衰：L70、LM-80、TM-21</h3>
+
+<ul>
+<li><strong>额定寿命 = L70</strong>（光通量衰减到初始值 70% 的时间），这是 DOE 的定义口径。</li>
+<li><strong>TM-21 外推规则</strong>：测试样本 ≥20 只时，宣称寿命最多为测试时长的 6 倍；10–19 只为 5.5 倍；&lt;10 只<strong>不得外推</strong>；DOE 另设 <strong>25000h 绝对上限</strong>。</li>
+<li><strong>国标</strong>：3000h 光通维持率 ≥96%、6000h ≥92%，寿命 ≥25000h。</li>
+<li><strong>陷阱</strong>：质保通常只覆盖"不亮"，<strong>不含光衰与色漂</strong>；"5 万小时"多是芯片数据，且常按每天 3 小时折算。</li>
+</ul>
+
+<h3>0.10 认证与能效</h3>
+
+<div class="chips">
+<span class="chip">GB 7000.1 灯具安全</span><span class="chip">GB 17625.1 谐波（25W 以上）</span>
+<span class="chip">GB 30255-2019 能效等级</span><span class="chip">GB/T 5700-2023 照明测量方法（2024-07-01 实施）</span>
+<span class="chip">GB/T 24823-2024 LED 模块性能（2025-06-01 实施）</span><span class="chip">GB/T 31831 应用技术要求</span>
+<span class="chip">GB/T 20145 光生物安全</span><span class="chip">CCC 强制认证</span>
+</div>
+
+<p><strong>能效标准正在换代：</strong>GB 30255-2019 不适用于调光调色产品；<strong>GB 30255-2026 已发布，2027-09-01 实施</strong>，覆盖范围扩大到射灯、高天棚灯、双端替换灯与调光调色产品，并新增待机能耗要求。</p>
+
+<h3>0.11 IP 与 IK：防尘防水 / 防撞击</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>代码</th><th>标准</th><th>含义</th><th>常见取值</th></tr></thead>
+<tbody>
+<tr><td><strong>IP</strong></td><td>GB/T 4208（等同 IEC 60529）</td><td>第一位防尘（0–6）、第二位防水（0–9）</td><td>室内干燥 IP20｜厨卫 IP44／IP54｜户外 IP65–IP68</td></tr>
+<tr><td><strong>IK</strong></td><td><strong>GB/T 20138-2023</strong>（等同 IEC 62262，2023-08-06 发布、2024-03-01 实施，替代 2006 版）</td><td>外壳对外界机械碰撞的防护，IK01（0.14J）–IK11（50J）</td><td>室内灯具常见 IK05（0.7J）／IK08（5J）；<strong>灯具如何应用见 GB/Z 30418-2013《灯具 IK 代码的应用》</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p><strong>IP 的第二个数字是"防进水"不是"防结露"。</strong>卫生间镜前灯坏掉多半不是进水，而是长期高湿导致驱动与触点腐蚀 —— 标 IP44 不等于能在淋浴区正上方长期用，应按 6.6 的分区规则选型。灯带的 IP 等级<strong>只对灯带本体有效</strong>，剪切端与接头必须另做端封。</p>
+</blockquote>
+
+<blockquote>
+<p><strong>"全光谱"是没有国标定义的营销词。</strong>"零蓝光"在物理上不成立（白光 LED 必有蓝光峰）。辨别方法：<strong>索要 SPD 光谱图 + R9 + TM-30 Rf/Rg</strong>，看 460–490nm 与 620–660nm 的连续性。真紫光激发全光谱应给出 Ra≥98、R9≥95、R12≥90 这类可查指标（如首尔半导体 SunLike、国星第四代全光谱符合 CTC 0001-2023）。</p>
+</blockquote>
+
+<hr />
+
+<h2 id="ch1">第 1 章 国家标准：哪些是硬指标</h2>
+
+<h3>1.1 现行标准体系</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>标准</th><th>性质</th><th>状态</th><th>对你意味着什么</th></tr></thead>
+<tbody>
+<tr><td><strong>GB/T 50034-2024</strong>《建筑照明设计标准》</td><td>推荐性（2024 版由 GB 改 GB/T）</td><td><strong>2024-08-01 实施，GB 50034-2013 同时废止</strong></td><td>住宅照度、色温、眩光、频闪、光效门槛的设计依据</td></tr>
+<tr><td><strong>GB 55016-2021</strong>《建筑环境通用规范》</td><td><strong>强制性工程建设规范</strong></td><td>2022-04-01 实施</td><td>Ra≥80、R9≥0、SDCM≤5、UGR≤19、RG0/RG1、PstLM≤1 —— 这些是<strong>底线，不是建议</strong></td></tr>
+<tr><td>GB/T 31831《LED 室内照明应用技术要求》</td><td>推荐性</td><td>现行</td><td>波动深度限值的出处</td></tr>
+<tr><td>GB/T 20145《灯和灯系统的光生物安全性》</td><td>推荐性（等同 CIE S009）</td><td>现行</td><td>RG0–RG3 分级依据</td></tr>
+<tr><td>GB 30255《室内照明用 LED 产品能效限定值及能效等级》</td><td>强制性</td><td>2019 版现行；<strong>2026 版 2027-09-01 实施</strong></td><td>能效标识</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>2024 版修订要点</strong>（住建部公告）：提高灯具效能与照明功率密度节能指标；增加 LED 灯/灯具性能指标与驱动电源要求；<strong>增加照明舒适度、光生物安全、闪烁与频闪效应、非视觉效应等健康照明指标</strong>；补充智能照明控制要求；增加直流配电与用地红线内室外功能照明。</p>
+
+<h3>1.2 住宅建筑照明标准值（GB/T 50034-2024 表 5.2.1）</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>房间或场所</th><th>参考平面</th><th>照度标准值</th><th>Ra</th><th>选购解读</th></tr></thead>
+<tbody>
+<tr><td>起居室 一般活动</td><td>0.75m 水平面</td><td><strong>100 lx</strong></td><td>80</td><td>基础照明的及格线</td></tr>
+<tr><td>起居室 书写、阅读</td><td>0.75m 水平面</td><td><strong>300 lx</strong>（混合照明）</td><td>80</td><td>沙发阅读角必须补光，光靠筒灯不够</td></tr>
+<tr><td>卧室 一般活动</td><td>0.75m 水平面</td><td><strong>75 lx</strong></td><td>80</td><td>卧室比客厅更低，别堆灯</td></tr>
+<tr><td>卧室 床头、阅读</td><td>0.75m 水平面</td><td><strong>200 lx</strong>（混合照明）</td><td>80</td><td>2024 版由 150 上调至 200</td></tr>
+<tr><td>餐厅</td><td>0.75m 餐桌面</td><td><strong>150 lx</strong></td><td>80</td><td>餐桌正上方吊灯/射灯，重点照明</td></tr>
+<tr><td>厨房 一般活动</td><td>0.75m 水平面</td><td>100 lx</td><td>80</td><td>——</td></tr>
+<tr><td>厨房 操作台</td><td>台面</td><td><strong>300 lx</strong>（混合照明）</td><td>80</td><td>2024 版由 150 上调至 300；<strong>必须加吊柜下灯带</strong></td></tr>
+<tr><td>卫生间 一般活动</td><td>0.75m 水平面</td><td>100 lx</td><td>80</td><td>——</td></tr>
+<tr><td>卫生间 化妆台</td><td>台面</td><td><strong>300 lx</strong>（混合照明）</td><td><strong>90</strong></td><td><strong>2024 版新增，且是住宅唯一 Ra90 要求</strong></td></tr>
+<tr><td>走廊、楼梯间</td><td>地面</td><td>100 lx</td><td>60</td><td>感应灯即可</td></tr>
+<tr><td>电梯前厅</td><td>地面</td><td>75 lx</td><td>60</td><td>——</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p><strong>表外空间的取值：</strong>国标住宅表<strong>没有</strong>玄关、书房、衣帽间、楼梯踏步的独立条目。实务处理：书房 → 取"起居室书写阅读"档 <strong>300 lx</strong>（长时间精细阅读可提至 500 lx，参照图书馆"普通阅览室 300 lx / 老年阅览室 500 lx，UGR≤19、Ra≥80"）；玄关 → 参照走廊楼梯间 <strong>100 lx</strong>；衣帽间、楼梯踏步 <span class="na">待核实</span>（无国标值）。</p>
+<p><strong>照度偏差：</strong>2024 版把设计照度允许偏差由 2013 版的 ±10% 改为 <strong>+20%</strong>（§4.1.5）—— 只允许往上偏，不允许往下。均匀度 Uo：一般场所 0.4、长时间工作 0.6、高要求 0.7。</p>
+</blockquote>
+
+<h3>1.3 LED 灯的电气与功率门槛（GB/T 50034-2024 §3.2.5）</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>项目</th><th>限值</th><th>为什么重要</th></tr></thead>
+<tbody>
+<tr><td>功率偏差</td><td>≤5W 时不大于 0.5W；&gt;5W 时不大于额定值的 10%</td><td>"12W 实际 20W"属于不合格</td></tr>
+<tr><td>功率因数</td><td>≤5W → ≥0.5；&gt;5W → 家居 ≥0.7，非家居 ≥<strong>0.9</strong></td><td>整屋几十只灯，PF 0.5 会显著拉低线路总功率因数</td></tr>
+<tr><td>噪声</td><td>1m 处 A 计权 ≤24 dB</td><td>深夜"嗡嗡响"的判定依据</td></tr>
+<tr><td>启动冲击电流</td><td>峰值 ≤40A 且持续时间 &lt;1ms</td><td>冲击过大会跳闸、损伤开关触点</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.4 照明功率密度（LPD）—— 全屋瓦数的上限校验</h3>
+
+<p>GB/T 50034-2024 §6.3.1 住宅 LPD <strong>目标值 ≤4.0 W/m²</strong>；现行值 <span class="na">以正式出版物为准</span>（2024 版的多数建筑 LPD 现行值已改由 GB 55015《建筑节能与可再生能源利用通用规范》规定，本轮检索到的住宅现行值有 5.0 与 6.0 两种 OCR 转述，不作定论）。公共建筑目标值：普通办公室/会议室 ≤6.5 W/m²，高档办公室 ≤9.5；商店一般 ≤7.0、专卖店 ≤8.0（需重点照明时 +5 W/m²）。</p>
+
+<blockquote>
+<p><strong>反算校验：</strong>100㎡ 住宅按 4.0 W/m² 目标值 → 全屋照明总功率应控制在 <strong>约 400W 以内</strong>。如果你算出需要 60 只 12W 筒灯（720W），方案本身就超标了，说明是灯位/光学设计有问题，不是灯不够多。</p>
+</blockquote>
+<hr />
+
+<h2 id="ch2">第 2 章 技术路线总览与优劣</h2>
+
+<p>市面上"同是 12W 3000K Ra90 的筒灯"，价格可以从 9 元到 900 元。差异来自四个层面：<strong>光源封装</strong>、<strong>驱动电源</strong>、<strong>二次光学</strong>、<strong>散热与结构</strong>。这一章把这四层拆开。</p>
+
+<h3>2.1 光源封装：COB 与中功率 SMD 阵列</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>维度</th><th>COB（Chip on Board 集成封装）</th><th>中功率 SMD 阵列（2835 / 3030 等密集布板）</th></tr></thead>
+<tbody>
+<tr><td>发光面</td><td>单一直径 6–25mm 的密集发光面，近似点光源</td><td>多个分立小光源，发光面积大</td></tr>
+<tr><td>光学表现</td><td><strong>配光干净、中心光强高、易做出干净光斑</strong>；与透镜/反光杯配合好</td><td>易出现"颗粒感"、多光斑叠加、边缘黄圈；需要扩散板匀光</td></tr>
+<tr><td>眩光</td><td>亮度集中 → 必须有足够的遮光角（深杯 / 格栅）</td><td>发光面积大、表面亮度低 → 天然更柔和，适合大面积泛光</td></tr>
+<tr><td>散热</td><td>热流密度高，对基板与散热体要求高</td><td>热量分散，散热设计压力小</td></tr>
+<tr><td>成本</td><td>较高（尤其大品牌 COB）</td><td>低，性价比路线首选</td></tr>
+<tr><td>典型应用</td><td>射灯、轨道灯、磁吸灯、高端筒灯（重点照明）</td><td>平板灯、基础筒灯、灯带、线性灯（环境照明）</td></tr>
+</tbody>
+</table>
+</div>
+
+<figure>
+<svg viewBox="0 0 900 250" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <text x="450" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#2b4f63">发光面大小决定"光学能不能做干净"</text>
+  <!-- COB -->
+  <g>
+    <rect x="30" y="46" width="380" height="180" rx="10" fill="#faf8f4" stroke="#e6e2da"/>
+    <text x="220" y="72" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b8792a">COB · 近似点光源</text>
+    <circle cx="220" cy="140" r="15" fill="#ffd88a" stroke="#b8792a" stroke-width="1.5"/>
+    <path d="M220 140 L120 200 M220 140 L320 200" stroke="#b8792a" stroke-width="1.2" stroke-dasharray="5 4"/>
+    <path d="M120 200 L320 200" stroke="#b8792a" stroke-width="2"/>
+    <text x="220" y="216" text-anchor="middle" font-size="12" fill="#6d6a64">单一发光面 → 光束边界清晰</text>
+  </g>
+  <!-- SMD -->
+  <g>
+    <rect x="450" y="46" width="420" height="180" rx="10" fill="#faf8f4" stroke="#e6e2da"/>
+    <text x="660" y="72" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3d6d87">SMD 阵列 · 分布式面光源</text>
+    <g fill="#9ec6da" stroke="#3d6d87">
+      <circle cx="560" cy="140" r="9"/><circle cx="596" cy="140" r="9"/><circle cx="632" cy="140" r="9"/>
+      <circle cx="668" cy="140" r="9"/><circle cx="704" cy="140" r="9"/><circle cx="740" cy="140" r="9"/>
+      <circle cx="776" cy="140" r="9"/>
+    </g>
+    <path d="M560 140 L500 200 M596 140 L540 200 M632 140 L590 200 M668 140 L650 200 M704 140 L720 200 M740 140 L790 200 M776 140 L840 200" stroke="#3d6d87" stroke-width="1" stroke-dasharray="4 4" opacity=".65"/>
+    <path d="M500 200 L840 200" stroke="#3d6d87" stroke-width="2"/>
+    <text x="660" y="216" text-anchor="middle" font-size="12" fill="#6d6a64">多点叠加 → 边缘易出现黄圈 / 副光斑</text>
+  </g>
+</svg>
+<figcaption>COB 与 SMD 阵列的光学差异示意。射灯要做干净光斑必须用 COB；环境照明用 SMD 反而更柔和。</figcaption>
+</figure>
+
+<h3>2.2 芯片与封装品牌</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>品牌</th><th>定位</th><th>特点 / 备注</th></tr></thead>
+<tbody>
+<tr><td><strong>Nichia（日亚化学）</strong></td><td>顶级</td><td>蓝光 LED 发明者，光效与一致性标杆，Optisolis 系列为自然光谱路线</td></tr>
+<tr><td><strong>ams OSRAM</strong></td><td>高端</td><td>车规级可靠性，色彩一致性好</td></tr>
+<tr><td><strong>Cree LED</strong>（SMART Global 旗下）</td><td>高端</td><td>曾以高显色 + 高光效著称，国内射灯常用（如雷士磁吸Ⅱ标注 CREE COB）</td></tr>
+<tr><td><strong>Lumileds</strong></td><td>高端</td><td>原 Philips 光电子业务。<strong>2025-08 三安光电拟以 2.39 亿美元收购</strong>（仍需监管审批，<span class="na">交易完成状态待核实</span>）</td></tr>
+<tr><td><strong>Bridgelux（普瑞）</strong></td><td>中高端</td><td>Thrive / Vero 系列以高显色著称，Yeelight M22 磁吸标注使用普瑞</td></tr>
+<tr><td><strong>Citizen CITILED</strong></td><td>中高端</td><td>COB 一致性好，国内中高端射灯常见</td></tr>
+<tr><td><strong>Seoul Semiconductor SunLike</strong></td><td>全光谱</td><td>紫光激发 + 三基色荧光粉，光谱接近自然光，符合 CTC 0001-2023</td></tr>
+<tr><td><strong>三安 / 国星 / 华灿 / 兆驰 / 晶元</strong></td><td>国产主力</td><td>性价比路线，国星第四代全光谱符合 CTC 0001-2023；参数差距已很小，主要在一致性与长期可靠性</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p><strong>"用 XX 品牌芯片"是最常见的偷换概念。</strong>芯片只是裸片，决定最终光色与寿命的是<strong>封装厂的荧光粉配方、分 bin 标准、焊接与散热</strong>。同一颗芯片，不同封装厂做出来的 R9 与色漂移可以差一大截。真正该问的是：<strong>整灯的 SPD 光谱图、R9、SDCM、6000h 光通维持率报告</strong>。</p>
+</blockquote>
+
+<h3>2.3 散热结构：决定光衰与质保的底牌</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>方案</th><th>散热能力</th><th>成本</th><th>典型</th></tr></thead>
+<tbody>
+<tr><td><strong>压铸铝</strong></td><td>最好（常兼作结构件）</td><td>最高</td><td>西顿、ERCO 等一体压铸兼散热体</td></tr>
+<tr><td>铝挤（鳍片）</td><td>好</td><td>中</td><td>米家筒灯 3 Pro 采用</td></tr>
+<tr><td>陶瓷</td><td>中，绝缘性好</td><td>高</td><td>小众</td></tr>
+<tr><td><strong>塑料</strong></td><td>最弱</td><td>最低</td><td>全塑工程筒灯（¥8–20），寿命与光衰最差</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p>散热直接决定 LED 结温与 L70 光衰速度 —— 这就是"3 年质保"和"5 年质保"背后的真实差异。<strong>全塑筒灯不是不能用</strong>，但应放在通道、储藏等次要位置，别用在客厅主照明。</p>
+</blockquote>
+
+<h3>2.4 驱动电源：整灯寿命的真正短板</h3>
+
+<p>行业共识性数据：<strong>整灯失效中超过 80% 源于电源故障，而非 LED 灯珠本身</strong>。LED 芯片本身可以做到 5 万小时以上，但驱动里最娇气的是<strong>电解电容</strong> —— 按 Arrhenius 经验规律，<strong>温度每升高 10℃，寿命约减半</strong>；密闭、散热不良的安装环境可使驱动寿命缩短 <strong>约 70%</strong>。</p>
+
+<div class="tw">
+<table>
+<thead><tr><th>维度</th><th>说明</th><th>怎么选</th></tr></thead>
+<tbody>
+<tr><td>恒流 vs 恒压</td><td>LED 必须恒流驱动；"恒压灯带"是在灯带上用电阻或 IC 限流</td><td>筒射灯看是否为隔离恒流驱动；灯带看是恒压还是恒流 IC</td></tr>
+<tr><td>隔离 vs 非隔离</td><td>隔离驱动有变压器，安全性高、体积大、成本高；非隔离体积小成本低</td><td>嵌入式灯具、可触及部位<strong>优先隔离</strong>；低压灯带电源选隔离</td></tr>
+<tr><td>外置 vs 内置</td><td>外置驱动可单独更换，散热条件更好</td><td><strong>优先外置/可拆驱动 + 驱动独立质保</strong>；这比"灯珠寿命 5 万小时"重要得多</td></tr>
+<tr><td>功率因数 PF</td><td>国标：≤5W ≥0.5；&gt;5W 家居 ≥0.7、非家居 ≥0.9</td><td>整屋几十只灯，PF 低会拉低线路总功率因数、增加线损</td></tr>
+<tr><td>调光兼容性</td><td>前沿可控硅 / 后沿 ELV / 0-10V / DALI / PWM</td><td>见第 7 章</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote class="no">
+<p><strong>最常见的死亡组合：</strong>非隔离驱动 + 密闭吊顶 + 无检修口 + 驱动埋在保温层里。三四个月后灯开始闪烁，然后整灯失效，而<strong>拆吊顶才能换</strong>。装修阶段唯一要做对的三件事：驱动可拆、吊顶留检修口、驱动不埋保温层。</p>
+</blockquote>
+
+<h3>2.5 二次光学：TIR 透镜 vs 反光杯</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>维度</th><th>TIR 透镜（PMMA / PC）</th><th>反光杯（铝 / 塑料镀膜）</th></tr></thead>
+<tbody>
+<tr><td>原理</td><td>全内反射折射，光线全部经过透镜</td><td>表面反射，光线不穿过材料</td></tr>
+<tr><td>效率</td><td>PMMA 透光率约 93%，系统效率常 &gt;90%；<strong>对光线的控制力强、浪费少</strong></td><td>反射率取决于镀膜：真空镀膜 &gt; 普通铝膜；多次反射有损失</td></tr>
+<tr><td>光斑</td><td>边界清晰、过渡均匀，<strong>一般没有副光斑</strong>；适合 &lt;60° 窄光束</td><td>易出现黄圈、边缘色差；镜面铝中心光强（CBCP）高</td></tr>
+<tr><td>耐温</td><td>PMMA 耐温约 90℃，长期高温可能黄化</td><td>金属杯耐温好</td></tr>
+<tr><td>观感</td><td>透镜面有"玻璃感"，深杯可做到"见光不见灯"</td><td>哑光铝柔和、镜面铝锐利</td></tr>
+<tr><td>典型用途</td><td>射灯、轨道灯、窄角筒灯、洗墙</td><td>宽角筒灯、PAR 灯、需要高 CBCP 的重点照明</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p><strong>"黄圈 / 蓝芯 / 暗区"是怎么来的：</strong>COB 发光面尺寸偏大而瓦数偏小、芯片排列不均匀，加上二次光学设计不合理，导致荧光粉转换光与蓝光在空间上分离 —— 中心偏冷（蓝芯）、边缘偏黄（黄圈）、中间出现暗区。<strong>判断方法：把灯对着白墙 1m 处点亮，看光斑从中心到边缘是否有色差。</strong>这是现场 30 秒就能做的质检。</p>
+</blockquote>
+
+<h3>2.6 防眩技术路线对比</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>手段</th><th>原理</th><th>优点</th><th>代价</th></tr></thead>
+<tbody>
+<tr><td><strong>深藏（深筒 / 深藏防眩）</strong></td><td>把光源往吊顶深处推，增大遮光角</td><td>效果最好、视觉最干净（"见光不见灯"）</td><td>需要吊顶深度，灯体高度增加</td></tr>
+<tr><td><strong>蜂窝格栅</strong></td><td>蜂巢状格栅切断大角度光线</td><td>最有效的配件级方案</td><td>损失约 20–30% 光输出（<span class="na">具体数值待核实</span>）</td></tr>
+<tr><td><strong>黑光杯 / 黑格栅</strong></td><td>降低反射面亮度</td><td>成本较低</td><td>效率略降</td></tr>
+<tr><td><strong>柔光片 / 扩散板</strong></td><td>把发光面变成大面积低亮度面</td><td>彻底消除刺眼感</td><td>光束角变宽、CBCP 大幅下降，射灯不能用</td></tr>
+<tr><td><strong>切光片 / 遮光罩</strong></td><td>物理遮挡特定方向</td><td>洗墙、照画可精确切边</td><td>需现场调节</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote class="std">
+<p><strong>国标下限：</strong>GB/T 50034-2024 表 4.3.1-1 要求发光体平均亮度 50–500 kcd/m² 时遮光角 ≥20°、&gt;500 kcd/m² 时 ≥30°。家装 COB 射灯普遍落在高档，<strong>遮光角 30° 及以上才算达标且舒适</strong>（如 Flos Light Shadow 45°、月影 SHADOW 与华艺丽影 30°）。西顿 CED6021C G2 标称 UGR&lt;13，属优秀水平。</p>
+</blockquote>
+
+<h3>2.7 光束角：beam angle 与 field angle 的口径陷阱</h3>
+
+<p><strong>beam angle（光束角）</strong>通常按光强降至峰值 50% 的两侧夹角定义；<strong>field angle（光场角）</strong>按 10% 峰值定义。但<strong>不同厂家会用 1/10 或 1/2 峰值两种口径</strong>标"光束角" —— 同一个灯，按不同口径可以差 <strong>1.5–2 倍</strong>。</p>
+
+<blockquote class="no">
+<p><strong>避坑：</strong>对比不同品牌的光束角前，先确认它们的定义口径。更可靠的做法是<strong>直接看配光曲线（.ldt / .ies 文件）或 DIALux 光度库数据</strong>，而不是信包装上的角度数字。窄角（10–15°）用于挑高空间与重点打亮；24–36° 是 2.6–3m 层高的主力；60° 用于泛光。</p>
+</blockquote>
+
+<hr />
+
+<h2 id="ch3">第 3 章 筒灯（Downlight）</h2>
+
+<h3>3.1 筒灯与射灯的区别</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>维度</th><th>筒灯（Downlight）</th><th>射灯（Spotlight）</th></tr></thead>
+<tbody>
+<tr><td>光束角</td><td>宽，通常 60°–120°</td><td>窄，通常 10°–60°</td></tr>
+<tr><td>作用</td><td><strong>环境照明</strong>（把整个空间照亮）</td><td><strong>重点照明 / 洗墙</strong>（照亮特定物体或墙面）</td></tr>
+<tr><td>可否调节方向</td><td>固定向下（少数可调）</td><td>可万向调节 30°–45° 甚至更多</td></tr>
+<tr><td>安装</td><td>嵌入式为主，也有明装</td><td>嵌入式 / 轨道 / 磁吸 / 明装</td></tr>
+<tr><td>典型位置</td><td>均匀分布，间距 90–120cm</td><td>离墙 20–30cm 洗墙，或对准装饰物</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>一句话：</strong>筒灯负责"能看清路"，射灯负责"有层次感"。无主灯方案里两者缺一不可 —— 只用筒灯会平，只用射灯会暗且眩。</p>
+
+<h3>3.2 开孔尺寸：最容易返工的一项</h3>
+
+<blockquote class="no">
+<p><strong>同标"3 寸"，不同品牌的开孔直径可以差 10mm 以上。</strong>正确流程是<strong>先买灯、后开孔</strong>，并且在水电交底阶段就把灯拿到现场交给木工。开孔一旦开错，只能扩孔（难看）或换灯（浪费）。</p>
+</blockquote>
+
+<div class="tw">
+<table>
+<thead><tr><th>俗称</th><th>常见开孔直径</th><th>典型功率</th><th>适用</th></tr></thead>
+<tbody>
+<tr><td>2.5 寸</td><td>Φ70–75 mm</td><td>3–7 W</td><td>窄边吊、走廊、局部补光</td></tr>
+<tr><td>3 寸</td><td>Φ85–95 mm</td><td>5–12 W</td><td><strong>家用主力</strong>（西顿 CED6021C G2 开孔 Φ75/Φ95；三雄皇冠 3 寸 PAK560063 开孔 Φ75）</td></tr>
+<tr><td>3.5 寸</td><td>Φ85–100 mm</td><td>7–15 W</td><td>客厅主照明</td></tr>
+<tr><td>4 寸</td><td>Φ90–120 mm</td><td>10–20 W</td><td>层高较高空间</td></tr>
+<tr><td>6 寸</td><td>Φ140–155 mm</td><td>18–30 W</td><td>商业、大堂</td></tr>
+<tr><td>8 寸</td><td>Φ195–230 mm</td><td>30–50 W</td><td>挑高、商业（雷士 NLED9208 开孔 200mm）</td></tr>
+</tbody>
+</table>
+</div>
+
+<figure>
+<svg viewBox="0 0 900 250" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <defs>
+    <marker id="arw" markerWidth="8" markerHeight="8" refX="4" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#3d6d87"/>
+    </marker>
+  </defs>
+  <rect x="20" y="40" width="860" height="34" fill="#e8e4dc"/>
+  <text x="34" y="62" font-size="12.5" fill="#6d6a64">吊顶（石膏板）</text>
+  <rect x="20" y="74" width="860" height="26" fill="#ffffff" stroke="#e6e2da"/>
+  <text x="34" y="92" font-size="12" fill="#6d6a64">吊顶内净空</text>
+  <!-- lamp 1 -->
+  <g>
+    <rect x="120" y="100" width="180" height="60" rx="6" fill="#3d6d87"/>
+    <text x="210" y="135" text-anchor="middle" font-size="12.5" fill="#fff">灯体</text>
+    <line x1="150" y1="160" x2="150" y2="230" stroke="#3d6d87" stroke-width="1.2"/>
+    <line x1="270" y1="160" x2="270" y2="230" stroke="#3d6d87" stroke-width="1.2"/>
+    <path d="M150 214 L270 214" stroke="#3d6d87" stroke-width="1.5" marker-start="url(#arw)" marker-end="url(#arw)"/>
+    <text x="210" y="205" text-anchor="middle" font-size="12" fill="#16323d">开孔 Φ</text>
+    <path d="M300 100 L300 160" stroke="#b8792a" stroke-width="1.2"/>
+    <path d="M292 100 L308 100 M292 160 L308 160" stroke="#b8792a" stroke-width="1.5"/>
+    <text x="316" y="134" font-size="12" fill="#8a5a12">灯体高度 H</text>
+    <text x="210" y="180" text-anchor="middle" font-size="11.5" fill="#6d6a64">H 30–168 mm</text>
+  </g>
+  <!-- beams -->
+  <g stroke="#b8792a" fill="none" stroke-width="1">
+    <path d="M210 160 L60 240" stroke-dasharray="5 4"/>
+    <path d="M210 160 L360 240" stroke-dasharray="5 4"/>
+    <text x="210" y="246" text-anchor="middle" font-size="11.5" fill="#8a5a12">宽光束 · 环境照明</text>
+  </g>
+  <g>
+    <text x="560" y="112" font-size="13" font-weight="700" fill="#2b4f63">深防眩需要吊顶深度</text>
+    <rect x="540" y="126" width="300" height="86" rx="8" fill="#fff8ec" stroke="#e0b25c"/>
+    <text x="556" y="150" font-size="12.5" fill="#5a4526">超薄款（LEDVANCE SLIM）≈ 30 mm</text>
+    <text x="556" y="170" font-size="12.5" fill="#5a4526">常规款（欧普雅韵 46.6 / 米家 63 mm）</text>
+    <text x="556" y="190" font-size="12.5" fill="#5a4526">大功率深防眩（西顿芳华 30W）≈ 168 mm</text>
+  </g>
+</svg>
+<figcaption>筒灯的两个关键尺寸：开孔直径 Φ 与灯体高度 H。深防眩型号普遍需要吊顶净空 60–110 mm，层高紧张时必须提前核算。</figcaption>
+</figure>
+
+<h3>3.3 主流品牌与实测参数对照</h3>
+
+<p>下表数值来自 DIALux 官方光度库（厂家上传的 .ldt/.ies 光度数据，属可核验的第三方渠道）与官方规格页。国内品牌官网多为 JS 动态渲染，公开数值零散，故国内样本偏少 —— 这是行业现状。</p>
+
+<div class="tw">
+<table>
+<thead><tr><th>品牌 / 型号</th><th>功率</th><th>光通量</th><th>光效</th><th>显色</th><th>色温</th><th>光束角</th><th>开孔 / 备注</th></tr></thead>
+<tbody>
+<tr><td><strong>西顿 芳华 CEJ62075R</strong></td><td>15W（实测 14.38W）</td><td>1805 lm</td><td><strong>126 lm/W</strong></td><td>CRI 95</td><td>4000K</td><td>50°</td><td>同价位光效与显色双高，标杆级</td></tr>
+<tr><td>西顿 芳华 CEJ61150</td><td>30W（实测 27.59W）</td><td>2355 lm</td><td>85 lm/W</td><td>CRI 90</td><td>—</td><td>—</td><td>灯体高约 168mm，需吊顶净空</td></tr>
+<tr><td>西顿 5 系Ⅴ代 CEJ2095</td><td>13.04W</td><td>1049 lm</td><td>80 lm/W</td><td>CRI 90</td><td>—</td><td>36°</td><td>—</td></tr>
+<tr><td>西顿 CED6021C G2（射灯）</td><td>15 / 24 / 35W</td><td>15W→1323 lm</td><td>—</td><td>CRI 90</td><td>—</td><td>—</td><td><strong>UGR&lt;13</strong>；开孔 Φ75 / Φ95</td></tr>
+<tr><td>三雄极光 皇冠 3 寸 PAK560063</td><td>7W</td><td>455 lm</td><td>65 lm/W</td><td>Ra≥80</td><td>—</td><td>—</td><td>开孔 Φ75；工程常见款</td></tr>
+<tr><td>三雄极光 领峰 PAK560363</td><td>50W</td><td>4500 lm</td><td>90 lm/W</td><td>CRI 85</td><td>—</td><td>—</td><td>φ175，大功率商业/挑高</td></tr>
+<tr><td>雷士 NLED9208（全塑）</td><td>17.6W</td><td>1560 lm</td><td>89 lm/W</td><td>Ra 80</td><td>5700K</td><td>—</td><td>开孔 200mm；<strong>5700K 不适合家居夜间</strong></td></tr>
+<tr><td>佛山照明 炫丽 2.5 寸</td><td>6W</td><td>420 lm</td><td>70 lm/W</td><td>Ra≥80</td><td>—</td><td>86°</td><td>开孔 Φ75、PF 0.5，约 ¥10.34</td></tr>
+<tr><td>朗德万斯 锐皓 G2 D92</td><td>4W</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>开孔 Φ75，约 ¥9.9（入门）</td></tr>
+<tr><td><strong>欧普（海外线）Performer G2 HG Rd125</strong></td><td>8W</td><td>880 lm</td><td>110 lm/W</td><td>CRI&gt;90</td><td>3000/4000K 拨档</td><td>70°</td><td>UGR19；可选 DALI2 / BLE2</td></tr>
+<tr><td>欧普 Performer G2 HG Rd150</td><td>12W</td><td>1440 lm</td><td>120 lm/W</td><td>CRI&gt;90</td><td>同上</td><td>70°</td><td>—</td></tr>
+<tr><td>欧普 Performer G2 HG Rd200</td><td>15W</td><td>1950 lm</td><td>130 lm/W</td><td>CRI&gt;90</td><td>同上</td><td>70°</td><td>—</td></tr>
+<tr><td>欧普 Performer G2 HG Rd200</td><td>22W</td><td>2860 lm</td><td>130 lm/W</td><td>CRI&gt;90</td><td>同上</td><td>70°</td><td>—</td></tr>
+<tr><td>欧普 Performer G2 HG Rd200</td><td>30W</td><td>3900 lm</td><td>130 lm/W</td><td>CRI&gt;90</td><td>同上</td><td>70°</td><td>UGR22</td></tr>
+<tr><td>欧普 Performer G2 HG Rd200</td><td>40W</td><td>5200 lm</td><td>130 lm/W</td><td>CRI&gt;90</td><td>同上</td><td>70°</td><td>UGR22</td></tr>
+<tr><td><strong>米家筒灯 3 Pro</strong></td><td>12W</td><td>660 lm</td><td>55 lm/W</td><td><strong>Ra 97</strong></td><td>2700–5700K</td><td>80°</td><td>深藏 45mm、蓝牙 Mesh；约 ¥152（国补约 ¥129.2）。<strong>光效偏低是高显色的代价</strong></td></tr>
+<tr><td>ERCO Iku 嵌入式（国际高端）</td><td>3–35.8W</td><td>510–6624 lm</td><td>—</td><td>—</td><td>—</td><td>可换透镜</td><td>Fresnel / Wallwash / Oval flood；防眩锥；DALI·Casambi</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p><strong>怎么读这张表：</strong>光效与显色是一对矛盾 —— 米家 3 Pro 为 Ra97 把光效压到 55 lm/W，而工程款的雷士 NLED9208 用 Ra80 + 5700K 做到 89 lm/W。国标也承认这个取舍：<strong>Ra≥90 时光效限值可降 10 lm/W</strong>。家用优先保显色，<strong>只做通道/储藏的灯可以牺牲显色换效率</strong>。</p>
+<p><strong>国际品牌基准：</strong>ERCO / Zumtobel / iGuzzini / Flos / Signify(Philips) / LEDVANCE / Cree / Acuity 等为工程高端线，单只常在数百至上千元，优势在光学品质、配光文件完整度、长期一致性与控制系统（DALI / Casambi）。具体型号逐项参数本轮未取得公开权威页，<span class="na">待核实</span>。</p>
+</blockquote>
+
+<h3>3.4 档次与价格带（家装电商，约）</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>档位</th><th>价格 / 只</th><th>典型配置</th><th>适合</th></tr></thead>
+<tbody>
+<tr><td>全塑工程</td><td>¥8–20</td><td>塑料外壳、Ra80、无防眩、PF 0.5</td><td>出租房、通道、储藏、临时照明</td></tr>
+<tr><td>铝材防眩</td><td>¥30–80</td><td>铝壳散热、有遮光角、Ra80–90</td><td><strong>家装主力</strong></td></tr>
+<tr><td>高显色 / 全光谱</td><td>¥80–150</td><td>Ra≥90、R9&gt;50、深防眩</td><td>客厅、餐厅、卧室</td></tr>
+<tr><td>智能 / 雷达感应</td><td>¥130–250</td><td>调光调色、人在感应、Mesh 组网</td><td>需要场景联动的空间</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.5 筒灯选购要点</h3>
+
+<ol>
+<li><strong>先算照度再定数量</strong>：20㎡ 客厅要 100 lx，用 800 lm 筒灯需约 9 只（UF 0.5 / MF 0.8）。别按"每 2–2.5㎡ 一只"的口诀硬套 —— 那是经验值，不是计算值。</li>
+<li><strong>开孔尺寸以实物为准</strong>：先买灯后开孔，同标 3 寸差 10mm+。</li>
+<li><strong>核算吊顶净空</strong>：超薄 30mm 到深防眩 168mm 都有，层高 &lt;2.65m 慎用深防眩筒灯。</li>
+<li><strong>色温全屋统一</strong>：客厅 3500K、卧室 3000K、厨卫 4000K。混色温是家装最常见的低级错误。</li>
+<li><strong>同批次一次买齐 + 10–15% 余量</strong>：避免补货出现色差（SDCM 波动）。</li>
+<li><strong>驱动可拆、留检修口</strong>：整灯失效 80% 来自电源。</li>
+<li><strong>认 CCC 认证</strong>：2024 年固定式通用灯具国抽 231 批次中 <strong>46 批次不合格（19.9%）</strong>，问题集中在防触电保护、接线、谐波电流；嵌入式灯具专项抽查亦有多批次不合格与涉嫌无 CCC。</li>
+</ol>
+<hr />
+
+<h2 id="ch4">第 4 章 射灯 / 轨道灯 / 磁吸灯</h2>
+
+<h3>4.1 灯头与形态：一眼认清规格</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>规格</th><th>电压</th><th>说明</th><th>适用</th></tr></thead>
+<tbody>
+<tr><td><strong>GU10</strong></td><td>220V 市电</td><td>卡口（"GU"= 卡口，10 = 插脚间距 10mm），直接接市电</td><td>家用最方便；缺点是每只灯自带驱动，寿命与一致性受驱动限制</td></tr>
+<tr><td><strong>MR16 / GU5.3</strong></td><td>12V</td><td>双插针，需外接变压器（传统卤素石英灯 legacy）</td><td>低压安全；但变压器是故障点，且 LED 化后优势不明显</td></tr>
+<tr><td><strong>AR111 / G53</strong></td><td>12V / 220V</td><td>大口径（111mm）定向灯，光强高</td><td>商业重点照明、挑高空间</td></tr>
+<tr><td><strong>PAR16 / PAR20 / PAR30 / PAR38</strong></td><td>220V（E27 或 E14）</td><td><strong>数字 = 口径 × 1/8 英寸</strong>：PAR30 = 30/8 = 3.75 英寸 ≈ 95mm；PAR38 ≈ 120mm</td><td>E27 螺口直接替换，明装/筒灯通用</td></tr>
+<tr><td><strong>轨道灯 / 磁吸模块</strong></td><td>220V 或 24/48V</td><td>见 4.2 / 4.3</td><td>灵活布光</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.2 高压轨道 vs 低压磁吸轨道</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>维度</th><th>传统高压轨道（220V）</th><th>磁吸轨道（24V / 48V 低压）</th></tr></thead>
+<tbody>
+<tr><td>电气</td><td>市电直接进轨道；三线=单回路，四线=三回路</td><td>轨道内为安全特低电压，模块磁吸 + 触点取电</td></tr>
+<tr><td>尺寸</td><td>轨道截面较大（如 Eutrac 三相约 36×32mm）</td><td><strong>极窄</strong>：如 Yeelight M22 轨高约 7mm × 宽约 27mm，可嵌入石膏板做到"只见一条缝"</td></tr>
+<tr><td>安装</td><td>明装为主，也有预埋件</td><td>可明装、可嵌入石膏板与吊顶开槽</td></tr>
+<tr><td>模块</td><td>射灯、泛光、洗墙等，但需卡扣匹配</td><td>射灯、泛光、格栅灯、线性灯、吊线灯自由组合，<strong>可随时增减移位</strong></td></tr>
+<tr><td>兼容性</td><td><strong>制式互不通用</strong>：Global Trac / Eutrac / ERCO Hi-trac / 国产件各成体系</td><td><strong>与 220V 高压轨物理上、电气上均不兼容</strong>；各品牌磁吸系统也互不通用</td></tr>
+<tr><td>成本</td><td>较低</td><td>同功率比传统轨道<strong>贵 20–40%</strong></td></tr>
+<tr><td>缺点</td><td>外观笨重、灵活性差</td><td>变压器需留检修位；开放触点可能积尘；<strong>生态锁定</strong>（后期只能买同品牌模块）</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p><strong>预埋尺寸参考：</strong>三雄极光预埋轨道截面约 71×53mm、吸顶款约 28×53mm、单根最长约 3m；华艺"律动"导轨条约 L1000×W72.6×H55.3mm；欧普轨道裁剪时最小保留长度约 300mm。<strong>预埋轨道必须在吊顶封板前定位，且与龙骨冲突是常见问题 —— 水电交底时要拿实物去现场比对。</strong></p>
+</blockquote>
+
+<h3>4.3 光学指标：CBCP 与照度的换算</h3>
+
+<p>射灯看"打多亮"要用中心光强 CBCP（cd），而不是瓦数。换算：</p>
+
+<pre><code>E = I / D²        I = CBCP (cd)     D = 灯具到被照面的距离 (m)</code></pre>
+
+<p><strong>算例：</strong>CBCP 12000 cd 的射灯装在 2.5m 层高，打到地面：E = 12000 / 2.5² = <strong>1920 lx</strong> —— 这是重点照明级别的照度（一般活动只要 100 lx）。</p>
+
+<div class="tw">
+<table>
+<thead><tr><th>光束角</th><th>典型 CBCP 量级</th><th>用途</th><th>建议间距</th></tr></thead>
+<tbody>
+<tr><td>10–15°</td><td>高（&gt;10000 cd）</td><td>挑高 4m+、远距离打亮、窄光束重点</td><td>0.8–1.2 m</td></tr>
+<tr><td>24°</td><td>中高</td><td><strong>2.6–3m 层高主力</strong>；洗墙、照画</td><td>1.0–1.5 m</td></tr>
+<tr><td>36°</td><td>中</td><td>泛光 + 重点兼顾；洗墙常用</td><td>1.2–1.8 m</td></tr>
+<tr><td>60°</td><td>低</td><td>区域泛光、近距离照明</td><td>1.5–2.5 m</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.4 洗墙几何：射灯最容易做砸的一项</h3>
+
+<p>洗墙高度 = 安装距离 × tan(光束角半角对应的覆盖关系)；简化实用口径：<strong>洗墙高度 ≈ 离墙距离 × tan(光束角)</strong>。例如 60° 光束角在离墙 1m 处，覆盖高度约 <strong>1.73m</strong>。</p>
+
+<figure>
+<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <rect x="20" y="30" width="860" height="26" fill="#e8e4dc"/>
+  <text x="34" y="48" font-size="12.5" fill="#6d6a64">吊顶</text>
+  <rect x="20" y="222" width="40" height="60" fill="#ffffff" stroke="#e6e2da"/>
+  <rect x="60" y="222" width="820" height="60" fill="#faf8f4" stroke="#e6e2da"/>
+  <text x="450" y="258" text-anchor="middle" font-size="12" fill="#6d6a64">地面</text>
+  <!-- wall -->
+  <rect x="20" y="56" width="14" height="166" fill="#cfc9bf"/>
+  <!-- lamps -->
+  <g>
+    <circle cx="140" cy="66" r="9" fill="#3d6d87"/><circle cx="300" cy="66" r="9" fill="#3d6d87"/><circle cx="460" cy="66" r="9" fill="#3d6d87"/>
+    <text x="300" y="98" text-anchor="middle" font-size="11.5" fill="#3d6d87">间距 60–80 cm</text>
+  </g>
+  <!-- beams -->
+  <g stroke="#b8792a" stroke-width="1.2" fill="none" stroke-dasharray="5 4">
+    <path d="M140 72 L60 222 M140 72 L220 222"/>
+    <path d="M300 72 L220 222 M300 72 L380 222"/>
+    <path d="M460 72 L380 222 M460 72 L540 222"/>
+  </g>
+  <path d="M60 222 L540 222" stroke="#b8792a" stroke-width="2"/>
+  <!-- distance marker -->
+  <path d="M34 72 L34 222" stroke="#16323d" stroke-width="1.2"/>
+  <path d="M26 72 L42 72 M26 222 L42 222" stroke="#16323d" stroke-width="1.5"/>
+  <text x="48" y="150" font-size="12.5" fill="#16323d">离墙 20–30 cm</text>
+  <!-- bad example -->
+  <g>
+    <rect x="600" y="40" width="280" height="200" rx="8" fill="#fdf3f2" stroke="#c98b83"/>
+    <text x="616" y="64" font-size="12.5" font-weight="700" fill="#8c4a41">常见错误</text>
+    <text x="616" y="88" font-size="12" fill="#5c3a36">离墙 &lt;30cm → 墙面出现明显光斑</text>
+    <text x="616" y="110" font-size="12" fill="#5c3a36">离墙 &gt;1.0m → 墙面照度不足、光斑拖长</text>
+    <text x="616" y="132" font-size="12" fill="#5c3a36">间距过疏 → 墙面"斑马纹"明暗相间</text>
+    <text x="616" y="154" font-size="12" fill="#5c3a36">间距过密 → 光斑重叠、浪费并与 LPD 冲突</text>
+    <text x="616" y="180" font-size="12" fill="#5c3a36">宽光束直视 → 眩光；需 24°–36° + 深藏</text>
+  </g>
+</svg>
+<figcaption>洗墙的正确与错误几何。核心三参数：离墙 20–30cm、光束角 24°–36°、灯间距 60–80cm。</figcaption>
+</figure>
+
+<div class="tw">
+<table>
+<thead><tr><th>层高</th><th>离墙距离</th><th>推荐光束角</th><th>灯间距</th></tr></thead>
+<tbody>
+<tr><td>2.5 m</td><td>0.3–0.5 m</td><td>24°–36°</td><td>1.0–1.5 m</td></tr>
+<tr><td>3.0 m</td><td>0.4–0.6 m</td><td>36°–60°</td><td>1.0–1.5 m</td></tr>
+<tr><td>4.0 m</td><td>0.5–1.0 m</td><td>24°–60°</td><td>1.0–2.0 m</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>分场景参考：</strong>商业展厅（层高 2.5–3.5m）→ 间距 0.8–1.5m、离墙 0.3–0.6m；家居客餐厅（2.5–3.0m）→ 1.0–1.5m / 0.4–0.6m；画廊（3.0–5.0m）→ 1.0–2.0m / 0.5–1.0m；办公（2.5–3.0m）→ 1.2–1.8m / 0.5–0.8m；酒店大堂（3.5–5.0m）→ 1.5–2.5m / 0.6–1.0m。</p>
+
+<p><strong>倾角：</strong>照墙 15°–30°；照展品 30°–45°；照画离墙约 20cm 配 15°–24°（角度太大画框会在画面上投影）。</p>
+
+<blockquote>
+<p><strong>重点照明与环境照明的照度比：</strong>3:1 柔和、5:1 有戏剧性；<strong>不宜超过 10–20</strong>（出处为照明设计通行经验法则，<span class="na">国标对应条款待核实</span>）。比值为 0 即"全平"；过高则环境过暗、瞳孔频繁调节导致疲劳。</p>
+</blockquote>
+
+<h3>4.5 射灯 / 轨道 / 磁吸实测参数对照</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>品牌 / 型号</th><th>功率</th><th>光通量</th><th>显色</th><th>光束角 / 光强</th><th>其他</th></tr></thead>
+<tbody>
+<tr><td><strong>WAC MO-6022 Lucio</strong></td><td>22W</td><td>≤1890 lm</td><td>CRI 85 / 90</td><td>8° / 20° / 35°；CBCP ≤ <strong>35930 cd</strong></td><td>ELV 或 0-10V 调光 100%–5%</td></tr>
+<tr><td><strong>Luxiona S-LINE SLIM 4×500 SPOT 24°</strong></td><td>18W（LED 16W）</td><td>1265.3 lm（LED 1628 lm）</td><td>CRI&gt;90、SDCM 3</td><td>24°</td><td>L80 B10 36000h、DC48V、III 类</td></tr>
+<tr><td><strong>西顿 CED6021C G2</strong></td><td>15 / 24 / 35W</td><td>15W→1323 lm</td><td>CRI 90</td><td>—</td><td><strong>UGR&lt;13</strong>；开孔 Φ75 / Φ95</td></tr>
+<tr><td><strong>雷士 TLED68911E 磁吸Ⅱ</strong></td><td>6/9/12/15/20W</td><td>385 / 650 / 895 / 1122 / 1496 lm<br>（3000K：410/690/960/1200/1600；4000K：445/750/1032/1290/1720）</td><td>—</td><td>—</td><td>CREE COB、外置隔离恒流、T4-20 24V、IP20 / IK05</td></tr>
+<tr><td>三雄极光 明宇 PAK413142</td><td>30W</td><td>2400 lm</td><td>CRI 91</td><td>38°</td><td>—</td></tr>
+<tr><td><strong>月影 SHADOW</strong></td><td>7 / 10 / 20W</td><td>350 / 650 / 1300 lm</td><td><strong>Ra&gt;97</strong></td><td>遮光角 30°</td><td>开孔 Φ65 / Φ75 / Φ85-100</td></tr>
+<tr><td><strong>Yeelight M22 磁吸</strong></td><td>—</td><td>—</td><td>Ra 95（标注普瑞芯片）</td><td>—</td><td>DC24V、轨道 7×27mm；系统价约 ¥849–3349</td></tr>
+<tr><td>Yeelight Pro P20 YLP105-W</td><td>12W</td><td>560–600 lm</td><td>CRI 90</td><td>120°</td><td>DC42V、调光 0.08%–100%、BLE Mesh</td></tr>
+<tr><td>欧普 LSL009001 磁吸射灯</td><td>9W</td><td>500 lm</td><td>Ra 90</td><td>24°</td><td>DC48V（页面另标 36V，<span class="na">待核实</span>）</td></tr>
+<tr><td>木林森 WDXF26-10-40K-BL</td><td>—</td><td>—</td><td>—</td><td>—</td><td>约 ¥142.20</td></tr>
+<tr><td>OMNILUX PAR30 E27（欧陆市场参考）</td><td>11W</td><td>850 lm</td><td>Ra 82</td><td>50°</td><td>20000h、能效 F、约 €9.50</td></tr>
+<tr><td>变焦射灯（dothelight）</td><td>—</td><td>—</td><td>—</td><td>0067：6°–50°；0512s：10°–60°；0010：3°</td><td>可变焦适合展品尺寸不确定的场景</td></tr>
+<tr><td>ERCO / iGuzzini / Flos / Soraa / Delta Light</td><td colspan="5"><span class="na">具体型号逐项参数待核实</span>（本轮未取得权威公开规格页）</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p><strong>CBCP 是本表最大的数据缺口：</strong>除 WAC 等少数国际品牌公开了完整光度数据外，<strong>几乎所有国内在售型号的 CBCP 实测值都未公开</strong>。想做精确重点照明设计，可向厂家索要 <strong>.ldt / .ies 配光文件</strong>导入 DIALux 验算；拿不到的产品，只能按"光通量 + 光束角"粗估。</p>
+</blockquote>
+
+<h3>4.6 射灯选购要点</h3>
+
+<ol>
+<li><strong>先定用途再定角度</strong>：洗墙 24°–36°、照画 15°–24°、挑高重点 10°–15°、泛光 60°。</li>
+<li><strong>看遮光角不看宣传</strong>：家装 COB 射灯应 ≥30°；国标最低 20°。</li>
+<li><strong>白墙实测黄圈</strong>：1m 处对墙点亮，中心到边缘有无色差（见 2.5）。</li>
+<li><strong>磁吸系统要选生态</strong>：一旦选定品牌，后期模块只能买同品牌；先确认该系列是否有你需要的模块（格栅灯、线性灯、吊线灯）。</li>
+<li><strong>变压器留检修位</strong>：低压轨道/磁吸的电源是故障点，且必须散热。</li>
+<li><strong>轨道品牌制式确认</strong>：Global Trac / Eutrac / ERCO Hi-trac / 国产互不通用，买了不匹配的模块装不上。</li>
+<li><strong>轨道总负载核算</strong>：Eutrac 三相 220–240V 最大 16A；具体轨道最大负载上限 <span class="na">待核实</span>，设计时应留出余量。</li>
+</ol>
+
+<hr />
+
+<h2 id="ch5">第 5 章 灯带（Strip / COB / 霓虹）</h2>
+
+<h3>5.1 封装型号：数字就是尺寸（mm × 0.1）</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>型号</th><th>尺寸（mm）</th><th>特点</th><th>典型用途</th></tr></thead>
+<tbody>
+<tr><td>3528</td><td>3.5 × 2.8</td><td>老型号、单芯功率低</td><td>装饰轮廓（逐步淘汰）</td></tr>
+<tr><td><strong>2835</strong></td><td>2.8 × 3.5</td><td><strong>当前主流</strong>，性价比与光效平衡好</td><td>灯槽、柜下、氛围照明</td></tr>
+<tr><td>5050</td><td>5.0 × 5.0</td><td>可内置 3 芯，RGB 常用</td><td>RGB 幻彩</td></tr>
+<tr><td>3014</td><td>3.0 × 1.4</td><td>细长、功率小</td><td>窄槽、低亮度氛围</td></tr>
+<tr><td>2216</td><td>2.2 × 1.6</td><td>超小、可做超高密度</td><td>需无颗粒感的近距离照明</td></tr>
+<tr><td>2110</td><td>2.1 × 1.0</td><td>极小</td><td>超密排布</td></tr>
+<tr><td>5630 / 5730</td><td>5.6 × 3.0 / 5.7 × 3.0</td><td>大功率单芯</td><td>需要高 lm/m 的场景</td></tr>
+<tr><td>3838</td><td>3.8 × 3.8</td><td>—</td><td>—</td></tr>
+<tr><td><strong>COB</strong></td><td>连续涂覆，数百芯/m</td><td><strong>无颗粒感、连续一条光</strong></td><td>浅槽、可见灯带的场景</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.2 电压与恒压/恒流：决定长距离一致性</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>方案</th><th>原理</th><th>优点</th><th>缺点</th></tr></thead>
+<tbody>
+<tr><td>DC 12V 恒压</td><td>靠每组的限流电阻限流</td><td>裁剪段短（常 3 珠一剪）、灵活</td><td>电流大、<strong>压降明显，5m 后末端变暗</strong></td></tr>
+<tr><td><strong>DC 24V 恒压</strong></td><td>同上</td><td><strong>同功率下电流只有 12V 的一半，压降低</strong></td><td>裁剪段较长（常 6 珠一剪）</td></tr>
+<tr><td>DC 48V 恒压</td><td>同上</td><td>压降更低，适合长距离</td><td>电源与产品线较少</td></tr>
+<tr><td><strong>恒流 IC / 分段恒流</strong></td><td>每段由 IC 恒流驱动</td><td><strong>首尾亮度一致，压降不影响亮度</strong></td><td>成本高；裁剪需按段</td></tr>
+<tr><td>AC 220V 高压灯带</td><td>直接市电</td><td>可做到几十米不压降</td><td><strong>裁剪段长大、频闪与安全风险高</strong>，家庭室内不推荐</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote class="no">
+<p><strong>"末端变暗"是恒压灯带的物理必然：</strong>电流沿 FPC 铜箔流动产生压降，末端电压降低 → 限流电阻上的电流减小 → 灯珠变暗。<strong>同功率下 24V 的电流是 12V 的一半，压降只有其约四分之一</strong>。所以长距离灯带<strong>优先选 24V，其次恒流 IC 方案</strong>。</p>
+</blockquote>
+
+<h3>5.3 压降计算：这一步决定灯带能不能用</h3>
+
+<pre><code>ΔV = 2 × ρ × L × I / A
+
+ΔV  压降 (V)         ρ  铜电阻率 ≈ 0.0175 Ω·mm²/m
+L   单程线长 (m)      I  电流 (A)
+A   铜箔截面积 (mm²)   ×2 因为回路有去线和回线
+
+工程建议：照明支路压降 ≤ 3%</code></pre>
+
+<p><strong>算例：</strong>24V / 100W 灯带，离电源 5m，用 1.5mm² 线：I = 100/24 = 4.17A，ΔV = 2×0.0175×5×4.17/1.5 ≈ <strong>0.49V ≈ 2.0%</strong>（合格）。<strong>同样功率换成 12V</strong>，电流翻倍到 8.33A，压降约 <strong>4.0%</strong>（超标）。</p>
+
+<pre><code>选型公式：A ≥ 2 × ρ × L × I / ΔV_allow
+
+电源容量：P_supply ≥ P_load × 1.2 ~ 1.3     （余量倍数各厂口径不一，待核实）
+P_load = 灯带长度 L(m) × 每米功率 (W/m)</code></pre>
+
+<p><strong>长度初筛：</strong>12V 单端供电 ≤5m、24V ≤10m（HitLights 官方 FAQ 亦建议 COB 灯带单端 ≤5m、整卷两端供电）。超长必须<strong>两端供电或多点注入</strong>。</p>
+
+<h3>5.4 密度、功率与 lm/m</h3>
+
+<blockquote>
+<p><strong>密度 ≠ 亮度。</strong>120 珠/m 的低功率灯带可以比 60 珠/m 的暗。<strong>唯一可比的是 lm/m（每米光通量）</strong>。</p>
+</blockquote>
+
+<div class="tw">
+<table>
+<thead><tr><th>密度</th><th>观感</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td>30 / 60 珠/m</td><td>有颗粒感</td><td>隐藏氛围（必须配深槽，见光即露馅）</td></tr>
+<tr><td>72 / 90 / 120 珠/m</td><td>较连续</td><td><strong>均衡选择</strong>，灯槽、柜下主力</td></tr>
+<tr><td>144 / 180 / 240 珠/m</td><td>连续</td><td>近距离可见、浅槽</td></tr>
+<tr><td>COB（数百芯/m）</td><td><strong>完全连续</strong></td><td>浅槽、明装线性灯、镜前</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>常见功率档：<strong>4.8 / 7.2 / 9.6 / 12 / 14.4 / 19.2 / 24 W/m</strong>。家用氛围照明 5–10 W/m 通常足够；作为主要照明（如灯槽反光灯）需 10–20 W/m。</p>
+
+<h3>5.5 结构、防护与控制协议</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>项目</th><th>选项</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>FPC 宽度</td><td>8 / 10 / 12 mm</td><td>越宽散热越好，可承载更大电流</td></tr>
+<tr><td>铜箔厚度</td><td>1oz / <strong>2oz</strong> / 3–4oz</td><td>2oz 明显优于 1oz（压降低、发热少）；高端如 Waveform ABSOLUTE 用 4oz</td></tr>
+<tr><td>裁剪单元</td><td>12V 常 3 珠一剪；24V 常 6 珠一剪</td><td>裁剪必须剪在标记处</td></tr>
+<tr><td>背胶</td><td>3M 300LSE / 9495LE</td><td>铝槽内也要用优质背胶，劣质胶半年脱落</td></tr>
+<tr><td>防护等级</td><td>IP20 / IP65 / IP67 / IP68</td><td>IP65 = 滴胶或套管（<strong>端头是薄弱环节</strong>、PU/环氧可能黄变）；IP67 = 全灌胶或挤出；IP68 需看厂商条件</td></tr>
+<tr><td>霓虹管</td><td>硅胶挤出</td><td>均光效果好，但尺寸大、弯曲受限</td></tr>
+<tr><td>控制协议（SPI）</td><td>WS2812B（5V 单数据线）、<strong>SK6812</strong>（有 RGBW）、APA102（数据+时钟，高刷新）、TM1814（RGBW）</td><td>幻彩分段控制</td></tr>
+<tr><td>控制协议（专业）</td><td>DMX512（512 通道/Universe：RGB 170 像素、RGBW 128）、Art-Net</td><td>大型项目</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.6 灯带实测参数对照</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>产品</th><th>电压</th><th>功率</th><th>光通量</th><th>光效</th><th>显色 / 密度</th><th>价格（约）</th></tr></thead>
+<tbody>
+<tr><td>欧普 LEDStrip-E 4.8W</td><td>—</td><td>4.8 W/m</td><td>600 lm</td><td>110 lm/W</td><td>CRI&gt;90、120 珠、2700K、IP20</td><td>—</td></tr>
+<tr><td>欧普 LEDStrip-E 9.6W</td><td>—</td><td>9.6 W/m</td><td>1200 lm</td><td>115 lm/W</td><td>CRI&gt;90、140 珠</td><td>—</td></tr>
+<tr><td>欧普 LEDStrip-E 14.4W</td><td>—</td><td>14.4 W/m</td><td>1730 lm</td><td>110 lm/W</td><td>CRI&gt;90、168 珠</td><td>—</td></tr>
+<tr><td>欧普 LEDStrip-E 19.2W</td><td>—</td><td>19.2 W/m</td><td>2300 lm</td><td>110 lm/W</td><td>CRI&gt;90、168 珠</td><td>—</td></tr>
+<tr><td>欧普 LEDStrip-P COB</td><td>—</td><td>12 W/m</td><td>1320 lm</td><td>110 lm/W</td><td>280 珠、COB</td><td>—</td></tr>
+<tr><td>欧普 Tunable White</td><td>—</td><td>12 W/m</td><td>1440 lm</td><td>120 lm/W</td><td>140 珠、可调色温</td><td>—</td></tr>
+<tr><td>欧普 RGBW</td><td>—</td><td>19.2 W/m</td><td>1000 lm</td><td>50 lm/W</td><td>60 珠（<span class="na">厂商页面字段与标题有出入，单位待核</span>）</td><td>—</td></tr>
+<tr><td><strong>HitLights 24V COB</strong></td><td>DC24V</td><td>约 10 W/m</td><td>约 984 lm/m</td><td>—</td><td>CRI 90+</td><td>US$79.99 / 10m（32.8ft）</td></tr>
+<tr><td><strong>Waveform CENTRIC HOME</strong></td><td>—</td><td>—</td><td>约 1476 lm/m</td><td>—</td><td>CRI 95、R9&gt;90</td><td>US$139 / 5m</td></tr>
+<tr><td><strong>Waveform ABSOLUTE</strong></td><td>—</td><td>—</td><td>1250 lm/m</td><td>—</td><td><strong>CRI 99</strong>、4oz 铜箔</td><td>US$375 / 5m</td></tr>
+<tr><td>Philips Hue Lightstrip Plus V4</td><td>—</td><td>11.5 W（2m）</td><td>1700 lm（4000K）</td><td>—</td><td>2000–6500K、IP20</td><td>C$82.49</td></tr>
+<tr><td>小米 Smart Lightstrip Pro</td><td>—</td><td>17 W（2m）</td><td>—</td><td>—</td><td>120 灯、RGBIC</td><td>€64.99</td></tr>
+<tr><td>Aqara T1</td><td>DC24V</td><td>≤6 W/m</td><td>—</td><td>—</td><td>75 珠、每 2m 150 光源、IP44</td><td>US$49.99（Zigbee 3.0）</td></tr>
+<tr><td>LIFX SuperColor 80in</td><td>—</td><td>—</td><td>1400 lm/条</td><td>—</td><td>—</td><td>US$39.98</td></tr>
+<tr><td>三雄极光 银河 PAK-LED-ODTE-8W120</td><td>DC24V</td><td>8 W/m</td><td>800 lm/m</td><td>—</td><td>120 珠</td><td>¥28.5 / m</td></tr>
+<tr><td>Diode LED Streamlite</td><td>DC24V</td><td>2.2 W/ft</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.7 灯带选购与安装要点</h3>
+
+<ol>
+<li><strong>按 lm/m 选型，不按瓦数，更不按珠数</strong>。</li>
+<li><strong>先算压降再定长度和线径</strong>：12V 单端 ≤5m、24V ≤10m，超长两端供电。</li>
+<li><strong>必须用铝槽</strong>：柔性灯带<strong>不得裸贴石膏板</strong> —— 一是散热（裸贴会加速光衰），二是出光质量（铝槽 + 亚克力面罩才不会有颗粒感）。</li>
+<li><strong>电源留 20–30% 余量</strong>，且电源要放在可检修、通风的位置。</li>
+<li><strong>IP 等级按位置选</strong>：室内干燥 IP20；厨房、卫生间按分区（见 6.4）；户外看 IP67 且端头做防水处理。</li>
+<li><strong>裁剪只在标记处</strong>，剪错整段报废。</li>
+<li><strong>RGB/RGBW 想清楚再用</strong>：幻彩灯带显色与光效远低于白光（欧普 RGBW 仅 50 lm/W），且需要控制器。<strong>氛围用彩色，功能照明必须用高显色白光</strong>。</li>
+</ol>
+
+<hr />
+
+<h2 id="ch6">第 6 章 灯光设计实操</h2>
+
+<h3>6.1 三层照明：环境 / 任务 / 重点</h3>
+
+<figure>
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <g>
+    <rect x="30" y="40" width="250" height="190" rx="10" fill="#f2f7f4" stroke="#7fa88f"/>
+    <text x="155" y="70" text-anchor="middle" font-size="14" font-weight="700" fill="#245240">① 环境照明 Ambient</text>
+    <text x="52" y="98" font-size="12.5" fill="#2f4a3d">把空间整体照亮，满足通行</text>
+    <text x="52" y="120" font-size="12.5" fill="#2f4a3d">筒灯、灯槽、线性灯、吸顶灯</text>
+    <text x="52" y="142" font-size="12.5" fill="#2f4a3d">住宅一般活动 100 lx</text>
+    <text x="52" y="170" font-size="12.5" fill="#2f4a3d">要点：均匀度 Uo ≥ 0.4</text>
+    <text x="52" y="192" font-size="12.5" fill="#2f4a3d">避免过亮 → 无层次、耗能</text>
+  </g>
+  <g>
+    <rect x="325" y="40" width="250" height="190" rx="10" fill="#faf8f4" stroke="#b8792a"/>
+    <text x="450" y="70" text-anchor="middle" font-size="14" font-weight="700" fill="#8a5a12">② 任务照明 Task</text>
+    <text x="347" y="98" font-size="12.5" fill="#5a4526">为具体作业提供工作面照度</text>
+    <text x="347" y="120" font-size="12.5" fill="#5a4526">厨下灯带、镜前灯、阅读灯</text>
+    <text x="347" y="142" font-size="12.5" fill="#5a4526">操作台 / 书写 300 lx</text>
+    <text x="347" y="170" font-size="12.5" fill="#5a4526">要点：Ra ≥ 90（化妆台强制）</text>
+    <text x="347" y="192" font-size="12.5" fill="#5a4526">必须避免手部/头部投影</text>
+  </g>
+  <g>
+    <rect x="620" y="40" width="250" height="190" rx="10" fill="#eef3f7" stroke="#3d6d87"/>
+    <text x="745" y="70" text-anchor="middle" font-size="14" font-weight="700" fill="#23414f">③ 重点照明 Accent</text>
+    <text x="642" y="98" font-size="12.5" fill="#23414f">制造层次、强调物体/墙面</text>
+    <text x="642" y="120" font-size="12.5" fill="#23414f">射灯、轨道、洗墙、照画</text>
+    <text x="642" y="142" font-size="12.5" fill="#23414f">重点/环境 3:1 ~ 5:1</text>
+    <text x="642" y="170" font-size="12.5" fill="#23414f">要点：遮光角 ≥30°、控光斑</text>
+    <text x="642" y="192" font-size="12.5" fill="#23414f">不宜超过 10–20 倍</text>
+  </g>
+</svg>
+<figcaption>三层照明模型。好的设计是三层叠加，而不是只做一层然后抱怨"太暗"或"太刺眼"。</figcaption>
+</figure>
+
+<h3>6.2 国标对"照度分布"的约束</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>约束</th><th>要求</th><th>解读</th></tr></thead>
+<tbody>
+<tr><td>作业面邻近区域（周围 0.5m）</td><td>作业面 ≥750 lx → 邻近 ≥500；500 → 300；300 → 200</td><td>不能"只有桌上一块亮"，周围落差太大会引起视觉疲劳</td></tr>
+<tr><td>通道 / 非作业区</td><td>不低于邻近作业区的 <strong>1/3</strong></td><td>避免频繁明暗适应</td></tr>
+<tr><td>墙面</td><td>≥ <strong>50 lx</strong></td><td>墙面太暗会让空间显得压抑（"洞穴效应"）</td></tr>
+<tr><td>顶棚</td><td>≥ <strong>30 lx</strong></td><td>顶棚完全没有光会让层高显得更低</td></tr>
+<tr><td>均匀度 Uo</td><td>一般 0.4 / 长时间工作 0.6 / 高要求 0.7</td><td>Uo = 最小照度 / 平均照度</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p><strong>这就是"只做重点照明会不舒服"的规范依据。</strong>一屋子射灯打亮点、周围全黑，照度均匀度可能低到 0.1，眼睛在亮暗之间频繁调节 —— 短时间有氛围，长时间会疲劳。</p>
+</blockquote>
+
+<h3>6.3 无主灯设计的几何参数</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>项目</th><th>参数</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>筒灯间距</td><td>90–120 cm</td><td>经验值；最终应按 0.3 的照度公式核算</td></tr>
+<tr><td>筒灯离墙</td><td>30–50 cm</td><td>太近出光斑、太远墙暗</td></tr>
+<tr><td>筒灯功率密度</td><td>每 2–2.5 ㎡ 一只（7–9W）</td><td>同上，需验算</td></tr>
+<tr><td>洗墙射灯</td><td>离墙 20–30 cm、24°–36°、间距 60–80 cm</td><td>见 4.4</td></tr>
+<tr><td>照画射灯</td><td>离墙约 20 cm、15°–24°</td><td>角度大会产生画框投影</td></tr>
+<tr><td>色温</td><td>全屋统一：客厅 3500K、卧室 3000K、厨卫 4000K</td><td><strong>混色温是最大忌讳</strong></td></tr>
+<tr><td>吊顶下吊</td><td>8–12 cm</td><td><strong>层高 &lt;2.65m 慎用无主灯</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>6.4 反光灯槽的做法</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>参数</th><th>取值</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>灯带功率</td><td>被照面宽 &lt;500mm → 约 10 W/m；&gt;500mm → 约 20 W/m</td><td>槽越宽需要越多光</td></tr>
+<tr><td>出光口宽度</td><td>100mm 光会困在槽内；<strong>200mm 较好</strong>；居住空间不宜 &gt;300mm</td><td>太窄效率低、太宽见灯珠</td></tr>
+<tr><td>灯槽宽度</td><td>家用 8–15 cm；层高 3m+ 可放宽至 15–20 cm</td><td>—</td></tr>
+<tr><td>灯槽深度</td><td>≥10 cm；柔性灯带/T5 硬灯条 ≥8 cm；<strong>≥5cm 才能避免直视灯珠</strong></td><td>深度不足会看到颗粒或刺眼</td></tr>
+<tr><td>安装位置</td><td>灯具居中装于槽底，挡板与灯平行</td><td>偏位会导致一侧亮一侧暗</td></tr>
+<tr><td>散热</td><td>柔性灯带<strong>必须配铝槽</strong>，不得裸贴石膏板</td><td>裸贴加速光衰、出光差</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>6.5 分空间照度与色温速查表</h3>
+
+<p>下表把"国标法定值"与"设计常用值"并列 —— 国标值是<strong>验收底线</strong>，推荐值是<strong>住起来舒服的区间</strong>，两者不应混淆。</p>
+
+<div class="tw">
+<table>
+<thead><tr><th>空间</th><th>国标标准值（参考平面）</th><th>推荐设计值</th><th>色温</th><th>显色</th><th>要点</th></tr></thead>
+<tbody>
+<tr><td>客厅 一般活动</td><td>100 lx（0.75m 水平面）Ra 80</td><td>100–300 lx</td><td>3000–4000K</td><td>Ra≥90（主张）</td><td>防眩；避免沙发茶几正上方直射</td></tr>
+<tr><td>客厅 书写阅读</td><td><strong>300 lx</strong>（混合照明）</td><td>300 lx</td><td>3500–4000K</td><td>Ra≥90</td><td>局部台灯补光</td></tr>
+<tr><td>餐厅</td><td><strong>150 lx</strong>（0.75m 餐桌面）Ra 80</td><td>200–500 lx</td><td>2700–3000K</td><td>Ra≥90、<strong>R9 尽量高</strong></td><td>食物与肤色的显色关键</td></tr>
+<tr><td>厨房 一般活动</td><td>100 lx</td><td>100–150 lx</td><td>4000K</td><td>Ra≥80</td><td>—</td></tr>
+<tr><td>厨房 操作台</td><td><strong>300 lx</strong>（台面）</td><td>300–500 lx</td><td>4000K</td><td>Ra≥90 更好</td><td>吊柜下线性灯，防油污</td></tr>
+<tr><td>卧室 一般活动</td><td>75 lx</td><td>75–150 lx</td><td>2700–3000K</td><td>Ra≥90</td><td>不宜用发光面平均亮度 &gt;2000 cd/m² 的灯具（GB/T 31831 附录 A）</td></tr>
+<tr><td>卧室 床头阅读</td><td><strong>200 lx</strong>（2013 版为 150）</td><td>200–500 lx</td><td>2700–3000K</td><td>Ra≥90</td><td>双侧床头灯避免遮挡</td></tr>
+<tr><td>书房 / 家庭办公</td><td><span class="na">无住宅独立条目</span>（参照起居室书写阅读 300 lx）</td><td>500 lx</td><td>3500–4000K</td><td>Ra≥90</td><td><strong>UGR≤19</strong>（GB 55016 §3.3.4）；均匀度 ≥0.6</td></tr>
+<tr><td>卫生间 一般活动</td><td>100 lx，Ra 80</td><td>100–200 lx</td><td>4000K</td><td>Ra≥80</td><td>按 IEC 60364-7-701 分区；干区 IP44 起步</td></tr>
+<tr><td>卫生间 化妆台</td><td><strong>300 lx（台面），Ra 90</strong>（2024 新增）</td><td>300–500 lx</td><td>3500–4000K</td><td>Ra≥90</td><td><strong>镜前双侧洗面</strong>；发光面亮度 &gt;2000 cd/m²</td></tr>
+<tr><td>玄关</td><td><span class="na">无独立条目</span>（参照走廊 100 lx）</td><td>100–200 lx</td><td>3000–3500K</td><td>Ra≥80</td><td>感应 + 低位引导</td></tr>
+<tr><td>走廊 / 楼梯间</td><td>100 lx（地面）Ra 60</td><td>100 lx</td><td>3000K</td><td>Ra≥80（主张）</td><td>夜灯用低亮度暖光</td></tr>
+<tr><td>儿童房</td><td><span class="na">无独立条目</span></td><td>阅读区 300–500 lx</td><td>3000–4000K</td><td>Ra≥90</td><td><strong>RG0 强制</strong>（GB 55016 §3.3.6）、<strong>SVM≤1.0</strong>、防眩遮光</td></tr>
+<tr><td>电梯前厅</td><td>75 lx（地面）Ra 60</td><td>—</td><td>—</td><td>—</td><td>2024 版新增行</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>
+<p><strong>关于"非视觉效应"：</strong>GB/T 50034-2024 已把非视觉效应列为新增健康照明指标（§4.6），但<strong>具体限值本轮未取得权威原文，<span class="na">待核实</span></strong>。可调白光常见范围 2200K–6500K；节律照明落地时仍需遵守 §4.5.2 的"夜间不宜高于 4000K"。</p>
+</blockquote>
+
+<h3>6.6 分空间设计要点</h3>
+
+<h4>卫生间</h4>
+<ul>
+<li><strong>防护等级</strong>：干区 IP44 起步；淋浴区按 IEC 60364-7-701 分区 —— <strong>0 区 IPX7/8、1 区 IPX4 起（推荐 IPX5）、2 区 IPX4</strong>。</li>
+<li><strong>镜前照明</strong>：Ra ≥ <strong>90</strong>（国标住宅唯一 Ra90 要求），照度 300 lx，<strong>必须双侧洗面</strong>；镜前灯发光面亮度不宜 &gt;2000 cd/m²。</li>
+</ul>
+
+<figure>
+<svg viewBox="0 0 900 230" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <rect x="330" y="30" width="240" height="180" rx="4" fill="#dfeaf5" stroke="#3d6d87" stroke-width="1.5"/>
+  <text x="450" y="120" text-anchor="middle" font-size="13" fill="#3d6d87">镜子</text>
+  <!-- wrong -->
+  <g>
+    <text x="60" y="52" font-size="13" font-weight="700" fill="#8c4a41">✗ 单顶灯</text>
+    <rect x="40" y="66" width="230" height="150" rx="8" fill="#fdf3f2" stroke="#c98b83"/>
+    <circle cx="155" cy="86" r="9" fill="#c98b83"/>
+    <path d="M155 92 L120 190 M155 92 L190 190" stroke="#c98b83" stroke-width="1" stroke-dasharray="4 4"/>
+    <ellipse cx="155" cy="160" rx="26" ry="34" fill="#c98b83" opacity=".35"/>
+    <text x="155" y="162" text-anchor="middle" font-size="11.5" fill="#5c3a36">阴影</text>
+    <text x="56" y="212" font-size="11.5" fill="#5c3a36">眉骨 / 鼻翼 / 下巴投下阴影</text>
+  </g>
+  <!-- right -->
+  <g>
+    <text x="620" y="52" font-size="13" font-weight="700" fill="#245240">✓ 双侧补光</text>
+    <rect x="600" y="66" width="270" height="150" rx="8" fill="#f2f7f4" stroke="#7fa88f"/>
+    <rect x="618" y="86" width="12" height="110" rx="3" fill="#7fa88f"/>
+    <rect x="840" y="86" width="12" height="110" rx="3" fill="#7fa88f"/>
+    <path d="M630 100 L590 150 M630 160 L590 190" stroke="#7fa88f" stroke-width="1" stroke-dasharray="4 4"/>
+    <path d="M840 100 L880 150 M840 160 L880 190" stroke="#7fa88f" stroke-width="1" stroke-dasharray="4 4"/>
+    <ellipse cx="730" cy="160" rx="26" ry="34" fill="#7fa88f" opacity=".18"/>
+    <text x="730" y="164" text-anchor="middle" font-size="11.5" fill="#2f4a3d">无阴影</text>
+    <text x="616" y="212" font-size="11.5" fill="#2f4a3d">左右两侧 &gt; 镜柜上方 &gt; 顶部</text>
+  </g>
+</svg>
+<figcaption>化妆镜照明：位置优先级为左右两侧 &gt; 镜柜上方 &gt; 天花板顶部；安装高度宜高于身高 10–20cm；色温 3000–4000K、Ra≥90。</figcaption>
+</figure>
+
+<h4>厨房</h4>
+<ul>
+<li>操作台 <strong>300 lx</strong>（2024 版由 150 上调），Ra 80（辨色要求高可取 90）。</li>
+<li><strong>必须加吊柜下灯带</strong> —— 顶棚灯会被人的身体挡住，在操作台形成背光阴影。</li>
+<li>色温 4000K 中性光便于辨别食材颜色。</li>
+</ul>
+
+<h4>儿童房</h4>
+<ul>
+<li><strong>RG0 强制</strong>（GB 55016 §3.3.6，儿童青少年长时间学习/活动场所）。</li>
+<li><strong>SVM ≤ 1.0</strong>（严于成人的 1.3）。</li>
+<li>必须有防眩措施（遮光角、深藏、柔光）；读写区照度参照"起居室书写阅读"300 lx，长时间精细作业可提至 500 lx。</li>
+<li>夜间照明色温 ≤3000K（§4.5.2）。</li>
+</ul>
+
+<h4>玄关 / 走廊 / 楼梯</h4>
+<ul>
+<li>地面照度 100 lx、Ra 60 即可。</li>
+<li>顶部人体感应器安装高度约 <strong>距地 2000mm</strong>；底部换鞋感应离地 <strong>200–300mm</strong>。</li>
+<li>楼梯踏步国标无独立条目，实务按 100 lx 并<strong>避免踏步阴影</strong>（灯位应在踏步前方而非正上方）。</li>
+</ul>
+
+<h4>卧室 / 起夜灯</h4>
+<ul>
+<li>床头阅读 <strong>200 lx</strong>（2024 版由 150 上调），一般活动 75 lx。</li>
+<li>起夜灯：墙面下方嵌入式，<strong>距地 300mm</strong>，色温 ≤3000K 且可调；避免直射眼睛。</li>
+</ul>
+
+<h4>衣柜 / 鞋柜</h4>
+<ul>
+<li><strong>门碰开关优于人体感应</strong> —— 感应器易被衣物遮挡导致误触或不亮。</li>
+<li>灯带 ≤10 W/m，Ra≥90（挑选衣服颜色需要）。</li>
+</ul>
+
+<h4>电视背景墙</h4>
+<blockquote>
+<p><strong>反光不是亮度问题，是光路径控制失败。</strong>解决思路是改变灯位与投射角，而不是调暗灯光。磁吸轨道离墙约 50–70cm（另一说 60–80cm），投射角 30°–45°；避免任何光源在屏幕法线方向的镜面反射路径上。</p>
+</blockquote>
+
+<hr />
+
+<h2 id="ch7">第 7 章 调光与智能控制生态</h2>
+
+<h3>7.1 有线调光协议对比</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>协议</th><th>调光范围</th><th>布线</th><th>优点</th><th>缺点</th></tr></thead>
+<tbody>
+<tr><td><strong>DALI-2</strong></td><td><strong>0.1%–100%</strong></td><td>总线（最长 300m）</td><td>单灯可寻址（0–255）、<strong>双向状态反馈</strong>、调光曲线平滑、支持 DT6/DT8 调色</td><td><strong>成本最高</strong>，驱动比 0-10V 贵 15–30%；需专业调试</td></tr>
+<tr><td>0-10V / 1-10V</td><td>1%–100%（实际常只能稳定到 10%）</td><td>每区额外 2 根控制线</td><td>简单、可靠、成本低</td><td>只能分组不能单灯寻址；<strong>深度调光表现差</strong></td></tr>
+<tr><td>可控硅 TRIAC（前沿）</td><td>约 10%–100%</td><td><strong>无需额外线缆</strong></td><td>成本最低、改造最方便</td><td>兼容性最差、有最低负载要求；<strong>与主动 PFC 驱动配合易嗡鸣</strong></td></tr>
+<tr><td>后沿 ELV</td><td>约 5%–100%</td><td>无需额外线缆</td><td>调光更深、无嗡鸣</td><td>需灯具支持</td></tr>
+<tr><td>PWM</td><td>—</td><td>—</td><td>数字调光、无色彩偏移</td><td>频率必须足够高（见下）</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote class="std">
+<p><strong>DALI-2 的标准化构成：</strong>IEC 62386 Part 101（系统）、102（控制装置）、207（LED 模块）、209（Tc 色温控制）、Part 250–253（2.0 版的存储、诊断、能量报告等）。DT6 = 单通道亮度控制，DT8 = 色温/彩光控制。</p>
+</blockquote>
+
+<blockquote class="no">
+<p><strong>"调光嗡嗡响"的原因与解法：</strong>前沿可控硅调光器 + 主动 PFC 驱动的常见组合冲突（斩波波形与 PFC 电路互相激发）。解法：<strong>改用后沿（ELV）调光器，或改用 0-10V / DALI 方案</strong>。国标 §3.2.5 也给了判定依据：<strong>1m 处 A 计权噪声 ≤24 dB</strong>。</p>
+</blockquote>
+
+<h3>7.2 频闪与 PWM 频率</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>场景</th><th>建议 PWM 频率</th></tr></thead>
+<tbody>
+<tr><td>基本可用</td><td>&gt; 1 kHz</td></tr>
+<tr><td>IEEE 1789 低风险区</td><td>&gt; 3 kHz（IEEE 1789 分段公式本轮仅取得二手转述，<span class="na">原文待核实</span>）</td></tr>
+<tr><td>1000fps 慢动作拍摄</td><td>&gt; 3 kHz</td></tr>
+<tr><td>影院 / 专业拍摄</td><td>10 kHz</td></tr>
+<tr><td>高端驱动实际水平</td><td>4–20 kHz</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote class="std">
+<p><strong>国标 §3.3.13：</strong>调光过程中，闪烁与频闪效应仍应满足 §4.4.1 的要求（PstLM ≤1），且<strong>实测光通量与设定值的偏差不应大于 5%</strong>。</p>
+</blockquote>
+
+<h3>7.3 无线协议与智能家居</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>协议</th><th>调光范围</th><th>是否需网关</th><th>特点</th></tr></thead>
+<tbody>
+<tr><td><strong>Zigbee 3.0</strong></td><td>0.1%–100%</td><td>需 Hub</td><td>mesh 自组网、低功耗、本地执行；Aqara、Philips Hue 主力</td></tr>
+<tr><td><strong>蓝牙 Mesh</strong></td><td>0.1%–100%</td><td><strong>无需 Hub</strong>（直接手机配网）</td><td>米家主力。Mesh 2.0：一致性场景、远程 OTA、快速配网、超低功耗、定向转发延迟 &lt;200ms</td></tr>
+<tr><td>Wi-Fi（非 Mesh）</td><td>—</td><td>路由器</td><td>设备直连但<strong>依赖云</strong>，断网即失控、设备多时路由器压力大</td></tr>
+<tr><td><strong>Matter 1.4</strong>（2024-11-07）</td><td>—</td><td>Thread Border Router</td><td>HRAP（路由器/AP 兼任 TBR、凭证共享减少网络分裂）、Enhanced Multi-Admin、新增入墙开关设备类型</td></tr>
+<tr><td><strong>Thread 1.4</strong>（2024-09-04）</td><td>—</td><td>Border Router</td><td>提升 BR 互操作性与网络可见性</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>米家生态的具体门槛：中枢网关固件需 <strong>3.3.0_0018</strong> 以上（另有 0023 的说法，<span class="na">待核实</span>）；单台中枢网关可连接约 <strong>200 个蓝牙 Mesh 设备 + 100 个蓝牙设备</strong>。</p>
+
+<h3>7.4 智能开关 vs 智能灯：装修阶段唯一不可逆的决策</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>方案</th><th>原理</th><th>优点</th><th>致命缺点</th></tr></thead>
+<tbody>
+<tr><td><strong>单火开关</strong></td><td>关灯后仍从回路取微电流维持自身供电</td><td><strong>无需零线</strong>，老房改造可用</td><td>带载功率 ≤5W 时易闪烁、断连；对灯具兼容性差</td></tr>
+<tr><td><strong>零火开关</strong></td><td>底盒内有零线，开关独立供电</td><td><strong>稳定、可带 200W+、无鬼火</strong></td><td><strong>必须在底盒预留零线</strong> —— 装修阶段不做就永远做不了</td></tr>
+<tr><td>智能灯 + 保留物理开关</td><td>开关控制通断，灯内模块控制亮度色温</td><td>可单灯调光调色</td><td><strong>物理开关一关，灯就离线</strong>，语音/App 全部失效</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote class="no">
+<p><strong>三条规定：</strong>① 装修阶段<strong>所有开关底盒必须预留零线</strong>（这是唯一事后无法弥补的决策）；② 单火版与零火版<strong>不能混用</strong>；③ 选了智能灯就要接受"开关不能关" —— 正确做法是<strong>用智能开关/无线场景面板替代传统通断开关</strong>，或把物理开关换成可回弹的场景面板。</p>
+</blockquote>
+
+<p><strong>国标对控制系统的要求：</strong>§7.3.9 场景切换响应时间 &lt;1s；§7.3.8 断电重启后应恢复到断电前的场景或默认场景。</p>
+
+<hr />
+
+<h2 id="ch8">第 8 章 布线、安装与验收</h2>
+
+<h3>8.1 装修阶段必须做对的七件事</h3>
+
+<ol>
+<li><strong>开关底盒预留零线</strong> —— 唯一不可逆项（见 7.4）。</li>
+<li><strong>灯线预留长度 ≥50cm</strong> —— 太短后期无法接线与检修。</li>
+<li><strong>驱动/变压器位置：可检修、通风、不埋保温层</strong> —— 电解电容温度每升高 10℃ 寿命减半。</li>
+<li><strong>吊顶预留检修口</strong> —— 驱动是主要故障点，不可拆吊顶 = 不可维修。</li>
+<li><strong>开孔前确认龙骨位置</strong> —— 灯位与龙骨冲突要现场调整，封板后无法改。</li>
+<li><strong>先买灯后开孔</strong> —— 同标尺寸可差 10mm 以上。</li>
+<li><strong>预埋轨道/磁吸轨道在封板前定位</strong> —— 拿实物到现场与龙骨比对。</li>
+</ol>
+
+<blockquote>
+<p><strong>优先级排序（容易被搞反）：</strong>"驱动可换"比"灯珠寿命长"重要得多。<strong>整灯失效中超过 80% 源于电源故障</strong>。所以选购时应优先：外置/可拆驱动 &gt; 驱动独立质保 &gt; 吊顶留检修口 &gt; 灯珠品牌。</p>
+</blockquote>
+
+<h3>8.2 到货验收清单</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>项目</th><th>方法</th><th>局限 / 注意</th></tr></thead>
+<tbody>
+<tr><td>色温一致性</td><td>并排点亮，肉眼比色</td><td>必须<strong>同批次</strong>；不同批次即使同型号也可能差 2–3 SDCM</td></tr>
+<tr><td>光斑质量</td><td>对白墙 1m 处点亮，看中心到边缘有无黄圈/蓝芯/暗区</td><td>现场 30 秒可完成，最实用的质检</td></tr>
+<tr><td>频闪</td><td>索要 PstLM / SVM 实测报告</td><td><strong>手机相机只能粗筛</strong>，不能作为验收依据（滚动快门混叠，会误报也会漏检）</td></tr>
+<tr><td>照度</td><td>正规项目按 <strong>GB/T 5700-2023</strong>（2024-07-01 实施）</td><td><strong>照度计 App 误差过大，不宜作为验收依据</strong></td></tr>
+<tr><td>眩光</td><td><strong>实际坐在沙发上、躺在床上、站在操作台前看</strong></td><td>UGR 是空间参数，站着看和坐着看结论不同</td></tr>
+<tr><td>墙面光斑</td><td>晚上到现场实拍</td><td>白天看不出问题</td></tr>
+<tr><td>调光表现</td><td>全程调光，检查有无闪烁、嗡鸣、跳变</td><td>噪声 ≤24dB（1m 处 A 计权）；调光偏差 ≤5%</td></tr>
+<tr><td>认证</td><td>查 <strong>CCC</strong> 标志与证书编号</td><td>2024 年固定式通用灯具国抽 <strong>231 批次中 46 批次不合格（19.9%）</strong>，问题集中在防触电保护、接线、谐波电流</td></tr>
+</tbody>
+</table>
+</div>
+
+<hr />
+
+<h2 id="ch9">第 9 章 预算、品牌与采购策略</h2>
+
+<h3>9.1 预算量级（100㎡ 住宅，约）</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>方案</th><th>总投入</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>传统主灯（灯具 + 安装）</td><td><strong>¥1,000–3,000</strong></td><td>吸顶灯/吊灯为主，成本最低</td></tr>
+<tr><td>无主灯 · 经济型</td><td>¥15,000–25,000</td><td>国产主流品牌，铝材防眩基础款</td></tr>
+<tr><td>无主灯 · 中配</td><td>¥30,000–50,000</td><td>高显色 + 调光</td></tr>
+<tr><td>+ 智能调光调色</td><td><strong>再加约 30%</strong></td><td>驱动、网关、面板</td></tr>
+<tr><td>+ 吊顶改造</td><td>¥25,000–60,000+</td><td>改造费比普通装修高 <strong>30–50%</strong>，工期多约 <strong>10 天</strong></td></tr>
+<tr><td>单方造价参考</td><td>¥100–200 / ㎡</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>单只灯具价格：</strong>性价比线（欧普 / 雷士 / 飞利浦基础款）&lt;¥100；中端（西顿、lipro 等）¥130–200，均价约 ¥160。</p>
+
+<blockquote class="no">
+<p><strong>什么时候不该做无主灯：</strong><strong>层高 &lt;2.7m</strong>（吊顶下吊 8–12cm 后压抑感明显）或<strong>预算紧张</strong>（无主灯成本是传统主灯的 10 倍以上，且需要吊顶改造）。传统主灯 + 局部重点照明（射灯洗墙 + 灯带）往往能以 1/5 的成本达到 80% 的效果。</p>
+</blockquote>
+
+<h3>9.2 品牌分层与选型策略</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>层级</th><th>代表</th><th>特点</th><th>适合</th></tr></thead>
+<tbody>
+<tr><td>国际工程高端</td><td>ERCO、Zumtobel、iGuzzini、Flos、Signify(Philips)、LEDVANCE、Cree、Acuity</td><td>光学品质、配光文件完整、长期一致性、控制系统完善（DALI / Casambi）</td><td>预算充足、要求光学品质与长期可靠性</td></tr>
+<tr><td>国内专业照明</td><td>西顿、三雄极光、雷士、欧普、佛山照明、立达信</td><td>性价比高、渠道完善、有工程线</td><td><strong>家装主力</strong></td></tr>
+<tr><td>互联网 / 智能</td><td>Yeelight、米家、lipro、Aqara</td><td>智能生态、高显色、参数透明</td><td>需要场景联动、App 控制</td></tr>
+<tr><td>入门 / 工程</td><td>公牛、木林森、TCL、月影</td><td>价格低</td><td>出租房、次要空间</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>9.3 采购策略</h3>
+
+<ol>
+<li><strong>混合配置</strong>：高频使用区（客厅、厨房、卫生间、书房）用好灯，次要区（储藏、走廊、阳台）用入门款 —— 不必全屋统一档次。</li>
+<li><strong>一次买齐同批次 + 10–15% 余量</strong>：补货必然有色差。</li>
+<li><strong>索要配光文件</strong>：重点照明项目要求厂家提供 .ldt / .ies，导入 DIALux 验算；拿不到的按粗估处理。</li>
+<li><strong>驱动单独询价</strong>：问清是否为外置、是否可拆、驱动质保年限。</li>
+<li><strong>认 CCC 与正规渠道</strong>：嵌入式灯具专项抽查曾出现多批次不合格与涉嫌无 CCC。</li>
+<li><strong>索要光谱报告</strong>：高显色项目要求 SPD 光谱图 + R9 数值；"全光谱"必须有数据支撑。</li>
+</ol>
+
+<hr />
+
+<h2 id="ch10">第 10 章 选购清单与避坑总表</h2>
+
+<h3>10.1 三步选型法</h3>
+
+<pre><code>第一步：定照度 → 算数量
+  查国标表（起居室 100 / 书写阅读 300 / 操作台 300 / 化妆台 300）
+  N = E × A / (Φ × UF × MF)
+
+第二步：定光学 → 选型态
+  环境照明 → 筒灯 / 灯槽，宽光束，Uo ≥ 0.4
+  任务照明 → 厨下灯带 / 镜前灯，Ra ≥ 90
+  重点照明 → 射灯，24°–36°（2.6–3m层高），遮光角 ≥ 30°
+
+第三步：定品质 → 筛品牌
+  Ra ≥ 90、R9 &gt; 50（优先 &gt; 80）
+  SDCM ≤ 5（敏感项目 ≤ 3）
+  PstLM ≤ 1、SVM ≤ 1.3（儿童房 ≤ 1.0）
+  RG0（儿童房强制）
+  驱动可拆 + 独立质保
+  CCC 认证</code></pre>
+
+<h3>10.2 话术陷阱对照表</h3>
+
+<div class="tw">
+<table>
+<thead><tr><th>听到这句话</th><th>真相</th><th>该问什么</th></tr></thead>
+<tbody>
+<tr><td>"12W 超亮，相当于 60W 白炽灯"</td><td>瓦数不代表亮度，<strong>只有流明代表亮度</strong></td><td>光通量多少 lm？光效多少 lm/W？</td></tr>
+<tr><td>"Ra95 高显色"</td><td>Ra 是 R1–R8 平均，<strong>不含深红 R9</strong></td><td>R9 是多少？TM-30 Rf / Rg 有吗？</td></tr>
+<tr><td>"无频闪"</td><td>无国标定义，任何灯都能这么写</td><td>PstLM 和 SVM 的实测值是多少？有报告吗？</td></tr>
+<tr><td>"全光谱 / 零蓝光"</td><td><strong>"全光谱"无国标定义；"零蓝光"物理不成立</strong></td><td>给 SPD 光谱图；R9、R12 数值？蓝光危害等级？</td></tr>
+<tr><td>"5 万小时寿命"</td><td>多为芯片数据，且常按每天 3 小时折算</td><td>L70 是多少小时？有 LM-80 + TM-21 报告吗？质保含不含光衰？</td></tr>
+<tr><td>"进口芯片"</td><td>芯片 ≠ 整灯品质，封装与散热同样关键</td><td>整灯的 SPD、SDCM、6000h 光通维持率？</td></tr>
+<tr><td>"支持调光"</td><td>不说明协议 = 大概率是前沿可控硅，且可能嗡鸣</td><td>支持哪种协议？最低调到百分之几？调光器型号？</td></tr>
+<tr><td>"智能控制"</td><td>可能是 Wi-Fi 单品，断网即失效</td><td>是否支持本地执行？断网/断电后如何恢复？</td></tr>
+<tr><td>"IP68 防水灯带"</td><td>IP68 需看厂商具体测试条件</td><td>端头如何处理？灌胶材质会不会黄变？</td></tr>
+<tr><td>"120 珠超密超高亮"</td><td><strong>密度 ≠ 亮度</strong></td><td>每米多少流明（lm/m）？</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>10.3 分品类避坑清单</h3>
+
+<h4>筒灯（12 条）</h4>
+<ol>
+<li><strong>虚标流明</strong>：只标"相当于 60W 白炽灯"不给 lm 的一律警惕。用"功率 × 光效"反推 —— 家用筒灯合理光效 <strong>70–130 lm/W</strong>，低于 60 属低端。</li>
+<li><strong>显色虚标</strong>：认 Ra 同时必看 R9；只写"Ra&gt;95"不给 R9 与 TM-30 Rf/Rg 的，"全光谱"多为话术。</li>
+<li><strong>频闪</strong>：要求厂家提供波动深度实测（GB/T 31831 / IEEE 1789-2015"无显著影响"水平）；<strong>手机拍视频有条纹只能粗筛</strong>。</li>
+<li><strong>色温漂移与色差</strong>：同批也可能 2–3 SDCM 波动，大面积安装务必一次买齐同批次并留存余量。</li>
+<li><strong>光斑缺陷</strong>：黄圈/青斑/彩虹纹源于灯珠与透镜（反光杯）不匹配 —— 大发光面做小瓦数、芯片排布不均、二次光学不合理。看实拍光斑。</li>
+<li><strong>开孔不匹配</strong>：同标"3 寸"开孔可差 10mm 以上，先买灯后按实物开孔。</li>
+<li><strong>变压器嗡鸣</strong>：驱动电感/变压器松动或劣质会在深夜安静环境发声；选灌胶驱动或分体式驱动。</li>
+<li><strong>调光闪烁与最低负载</strong>：可控硅调光器有最低负载要求（LED 瓦数太低会闪）；先确认灯具标称支持哪种调光再配调光器。</li>
+<li><strong>浴室防水</strong>：淋浴区上方看 IP44/IP65 与防雾结构；<strong>"防雾"≠"防水"</strong>，注意等级标的是整灯还是出光面。</li>
+<li><strong>吊顶与暗装深度</strong>：深防眩筒灯灯体 55–110mm，吊顶净空不够装不进去；净高 &lt;2.7m 慎做满吊无主灯。</li>
+<li><strong>光衰与质保</strong>：问清是"整灯 3 年"还是"光源 5 年"，以及 L70 小时数（常见 30000h）；散热结构是决定因素。</li>
+<li><strong>国抽风险</strong>：2024 年固定式通用灯具国抽 231 批次中 46 批次不合格（19.9%）—— 认 CCC 标志与正规渠道。</li>
+</ol>
+
+<h4>射灯 / 轨道 / 磁吸（12 条）</h4>
+<ol>
+<li><strong>黄圈 / 青边</strong>：反光杯 + 荧光粉空间色差导致光斑边缘发黄或发青，白墙上一眼可见；TIR 透镜与深杯方案表现更好。</li>
+<li><strong>中心与边缘色差（Δu'v'）</strong>：厂商标称 Ra95 不代表光斑内色温一致，需现场打白墙看。</li>
+<li><strong>宣称"无频闪"但调光后闪</strong>：满载无频闪 ≠ 调光全程无频闪，必须在 10% / 30% 亮度下验证。</li>
+<li><strong>调光器不兼容</strong>：可控硅调光器与 LED 驱动不匹配会闪烁、嗡鸣、熄火、低亮度跳变；低压磁吸还要确认壁装调光器、变压器、灯具三者协议一致。</li>
+<li><strong>磁吸轨道品牌互不通用</strong>：截面尺寸、触点位置、电压（48V vs 24V）都不同，<strong>混装会烧灯</strong>；与 220V 高压轨道物理/电气完全不兼容。</li>
+<li><strong>低压磁吸功率上限与发热</strong>：所有模块功率之和必须小于驱动额定并留余量；长轨道需分段供电。</li>
+<li><strong>轨道灯接头接触不良</strong>：适配器弹性疲劳或未卡到位会间歇性熄灭、打火；开放触点积尘也会断亮 —— 断电后用干超细纤维布擦拭轨道铜条与模块触点。</li>
+<li><strong>色温不一致（多灯混装）</strong>：不同品牌/批次并置会出现明显色差；敏感项目要求 ≤3 SDCM 并索批次光色报告。</li>
+<li><strong>光衰口径</strong>：L80 比 L70 更严格（如 Luxiona 标 L80/B10 36000h）；且 Ta 高温会大幅缩短寿命。</li>
+<li><strong>CBCP 虚标</strong>：部分电商只标流明不标 CBCP，或用"中心照度@1m"冒充；应索取 IES/LDT 文件核算。</li>
+<li><strong>遮光角不足导致晃眼</strong>：浅杯射灯装在人眼可视范围内（尤其沙发上方、床头）必然刺眼；选遮光角 ≥30°、优选 45°。</li>
+<li><strong>洗墙"扇形/斑马纹"</strong>：因灯具间距过大或非偏光配光；需缩短间距、改用偏光洗墙透镜。</li>
+</ol>
+
+<h4>灯带（12 条）</h4>
+<ol>
+<li><strong>虚标功率与流明</strong>：用 lm/m 与 W/m 反算 lm/W，<strong>白光超过 160–180 lm/W 要警惕</strong>。</li>
+<li><strong>FPC 铜厚 / 板宽不足</strong>：尾端明显变暗、发热；长条优选 2oz 以上、24V、宽板。</li>
+<li><strong>背胶脱落</strong>：未除油、未施压、未固化，或贴在乳胶漆/粗糙面；拐角与端头要补卡扣/胶。</li>
+<li><strong>IP65 滴胶黄变</strong>：环氧 / PU 胶长期受热与紫外会黄化并改变色温；户外优先硅胶挤出。</li>
+<li><strong>端头 / 接头未封</strong>：IP 等级只针对灯带本体，剪切端与接头需专用端封，否则整条防护失效。</li>
+<li><strong>AC220V 高压灯带</strong>：频闪更明显、裁剪段长大、触电与安全风险高；家用以低压为主。</li>
+<li><strong>批次色差与色温漂移</strong>：不同批次拼接会出现"两截色"；要求同 BIN / 同批次并留余量。</li>
+<li><strong>RGB 混白偏色</strong>：需要白光照明就选 RGBW / RGBCCT，<strong>别用纯 RGB 当主照明</strong>。</li>
+<li><strong>生态锁定与断网</strong>：云端依赖型产品断网可能不可用；优先支持 Matter / 本地控制（Zigbee / Thread）。</li>
+<li><strong>控制器功率不足</strong>：通道电流与总功率都要核算；像素灯带还需叠加注入电源并<strong>共地</strong>。</li>
+<li><strong>不装铝槽</strong>：中高功率长期点亮会过热光衰、寿命下降、光斑明显。</li>
+<li><strong>裁剪位置错误或电源无认证</strong>：必须在剪刀线裁剪；电源认准 CCC / CE / UL，并匹配调光方式。</li>
+</ol>
+
+<h3>10.4 最终 Checklist（打印带走）</h3>
+
+<div class="grid2">
+<ul>
+<li>☑ 按国标照度标准值算了灯数，不是按口诀</li>
+<li>☑ 全屋 LPD 校验 ≤4.0 W/m²（目标值）</li>
+<li>☑ 色温全屋统一，夜间 ≤4000K</li>
+<li>☑ Ra ≥ 90、R9 &gt; 50</li>
+<li>☑ SDCM ≤ 3（敏感项目）</li>
+<li>☑ PstLM ≤ 1、SVM ≤ 1.3（儿童房 ≤1.0）</li>
+<li>☑ 儿童房 RG0</li>
+<li>☑ 遮光角 ≥30°、UGR ≤19</li>
+</ul>
+<ul>
+<li>☑ 开孔尺寸以实物为准（先买灯后开孔）</li>
+<li>☑ 吊顶净空够灯体高度</li>
+<li>☑ 驱动外置/可拆 + 独立质保</li>
+<li>☑ 吊顶留检修口</li>
+<li>☑ 开关底盒预留零线</li>
+<li>☑ 灯线预留 ≥50cm</li>
+<li>☑ 同批次一次买齐 + 10–15% 余量</li>
+<li>☑ CCC 认证、正规渠道</li>
+</ul>
+</div>
+
+<hr />
+
+<h2 id="src">附录：来源与延伸阅读</h2>
+
+<h3>国家标准与官方文件</h3>
+<ul>
+<li><a href="https://www.mohurd.gov.cn/xinwen/gzdt/art/2024/art_304_777570.html">住房和城乡建设部：关于发布国家标准《建筑照明设计标准》的公告（GB/T 50034-2024）</a> —— 2024-08-01 实施，GB 50034-2013 同时废止</li>
+<li><a href="https://gf.cabr-fire.com/m/article-41025.htm">GB 55016-2021《建筑环境通用规范》3.3 室内照明设计（条文全文）</a></li>
+<li><a href="https://gf.cabr-fire.com/m/list-2275.htm">GB 55016-2021 条文列表</a></li>
+<li><a href="https://zcsys.ncepu.edu.cn/docs/2025-01/d5c197c2837e4892ac7d02faae298500.pdf">GB/T 50034-2024《建筑照明设计标准》全文 PDF（155 页，文字层完整）</a></li>
+<li><a href="https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=8197417C8B7248B585E814BAC6B10B39">国家标准全文公开系统：相关标准信息</a></li>
+<li><a href="https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D77912D3A7E05397BE0A0AB82A&review=true">国家标准全文公开系统：标准详情</a></li>
+<li><a href="https://openstd.samr.gov.cn/bzgk/std/std_list?p.p1=0&p.p90=circulation_date&p.p91=desc&p.p2=IK%E4%BB%A3%E7%A0%81">国家标准全文公开系统：IK 代码标准检索结果（GB/T 20138-2023、GB/Z 30418-2013）</a></li>
+<li><a href="https://gf.cabr-fire.com/m/article-66997.htm">GB/T 50034-2024 4.3 眩光限制（条文全文）</a></li>
+<li><a href="https://gf.cabr-fire.com/m/article-66998.htm">GB/T 50034-2024 4.4 闪烁与频闪（条文全文）</a></li>
+<li><a href="https://ndls.cnis.ac.cn/standard/detail/bc198577116502509dafc5e0cc9fd1f0">中国标准化研究院标准信息查询</a></li>
+<li><a href="https://www.samr.gov.cn:3000/xw/mtjj/art/2026/art_a9b7067e0b724b78b2fd99307b77630b.html">市场监管总局：灯具产品质量国家监督抽查情况通报</a></li>
+<li><a href="http://gzw.gd.gov.cn/gkmlpt/content/4/4770/mpost_4770827.html">地方市场监管部门：灯具抽查结果公告</a></li>
+</ul>
+
+<h3>光度数据与产品实测</h3>
+<ul>
+<li><a href="https://luminaires.dialux.com/zh/article/N-QiMxUvQDWRx2mYOjyGHQ">DIALux 光度库：西顿 5 系列Ⅴ代筒灯 CEJ2095 G5 15W 2700K 36°</a></li>
+<li><a href="https://luminaires.dialux.com/zh/article/nApzfTw-TY2ygm4aO0t13g">DIALux 光度库：西顿 芳华筒灯 CEJ62075R 15W 50°</a></li>
+<li><a href="https://luminaires.dialux.com/zh/article/rdlZZUSPTfOoNb-lFkjVxQ">DIALux 光度库：西顿 嵌入式射灯 CED6021C G2 15W 3500K 36°</a></li>
+<li><a href="https://luminaires.dialux.com/zh/article/rca13FgxTDOuUXbRgZ9cgQ">DIALux 光度库：三雄极光 皇冠系列 3 寸 LED 筒灯</a></li>
+<li><a href="https://luminaires.dialux.com/zh/article/lozJgDc7R9adeFUK3SWM2Q">DIALux 光度库：三雄极光 明宇 LED 导轨射灯</a></li>
+<li><a href="https://luminaires.dialux.com/es/article/Xwdtz5uhTFClPSxXB5JNRA">DIALux 光度库：雷士 TLED68911E 15W 15° 4000K 磁吸Ⅱ导轨射灯（西语入口）</a></li>
+<li><a href="https://luminaires.dialux.com/es/article/vBhv2vbUTpCSx_L0DtwffQ">DIALux 光度库：雷士 NLED9208 18W 5700K 全塑筒灯（西语入口）</a></li>
+<li><a href="https://www.erco.com/en/products/indoor/recessed-luminaires/iku-7311/">ERCO Iku 嵌入式灯具（官方产品页）</a></li>
+<li><a href="https://download.erco.com/nl/file/product_characteristics+planning-aid-invia/erco-planning-aid-for-invia-en_us.pdf">ERCO 产品特性与规划手册（PDF）</a></li>
+<li><a href="https://lightfinder.erco.com/contentaccess/fallback/download/2-product_characteristics/4-planning-aid-for-tracks/1-planning-aid-track/erco-planning-aid-for-tracks-en.pdf">ERCO 轨道系统规划手册（PDF）</a></li>
+<li><a href="https://www.erco.com/en/service/the-advantages-of-a-48v-system-7260/">ERCO：48V 系统的优势</a></li>
+<li><a href="https://www.erco.com/en/service/wireless-control-of-erco-luminaires-with-casambi-bluetooth-6998/">ERCO：Casambi 蓝牙无线控制</a></li>
+<li><a href="https://luxiona.pl/en/offer/surface-mounted-luminaires/s-line-slim/19.4393.5371.04/">Luxiona S-LINE SLIM 官方规格页</a></li>
+<li><a href="http://m.waclighting.com/product/3386">WAC Lighting MO-6022 Lucio 官方产品页</a></li>
+<li><a href="https://www.opple.it/en/product/indoor/downlights/downlight-performer-g2-hg">欧普（海外）Downlight Performer G2 HG 官方规格</a></li>
+<li><a href="https://www.pak.com.cn/products_detail/423.html">三雄极光 产品详情页</a></li>
+<li><a href="https://www.pak.com.cn/products_detail/426.html">三雄极光 产品详情页</a></li>
+<li><a href="https://www.pak.com.cn/products_detail/431.html">三雄极光 产品详情页</a></li>
+<li><a href="https://www.pak.com.cn/products_detail/436.html">三雄极光 产品详情页</a></li>
+<li><a href="https://www.ehsy.com/product-HCS629">西域（ehsy）工业品参数页</a></li>
+<li><a href="https://www.ehsy.com/product-KKT122">西域（ehsy）工业品参数页</a></li>
+<li><a href="https://www.ehsy.com/product-NXD215">西域（ehsy）工业品参数页</a></li>
+<li><a href="https://www.steinigke.fr/en/mpn88043010-omnilux-par-30-230v-smd-11w-e-27-led-3000k.html">OMNILUX PAR30 11W E27 参数（欧陆渠道）</a></li>
+<li><a href="https://www.dothelight.com/zh-CN/product/0067-sunset-light-led-zoomable-10w-7w-track-spotlight/">dothelight 0067 变焦轨道射灯（6°–50°）</a></li>
+<li><a href="https://professional.flos.com/en/global/stories/stories-light-shadow-designed-to-avoid-glare/">Flos Light Shadow：为消除眩光而设计（45° 遮光角）</a></li>
+<li><a href="https://7light.ru/trekovyy-svetilnik-yeelight-pro-p20-magnitnyy-lineynyy-60-sm-belyy-ylp105-w">Yeelight Pro P20 磁吸线性灯参数</a></li>
+<li><a href="https://matter.cn/product/yeelight-pro-s-light">Yeelight Pro S 灯（Matter 支持）</a></li>
+</ul>
+
+<h3>灯带与低压系统</h3>
+<ul>
+<li><a href="https://www.opple.at/en/product/lamps/strips/led-strip-ip20">欧普 LEDStrip IP20 官方规格</a></li>
+<li><a href="https://www.opple.at/en/product/lamps/strips/led-strip-ip20-chip-on-board-cob">欧普 LEDStrip COB 官方规格</a></li>
+<li><a href="https://www.opple.at/en/product/lamps/strips/led-strip-ip20-rgbw">欧普 LEDStrip RGBW 官方规格</a></li>
+<li><a href="https://www.opple.at/en/product/lamps/strips/led-strip-ip67">欧普 LEDStrip IP67 官方规格</a></li>
+<li><a href="https://ledvance.com/en-uk/professional-lighting/products/led-strips--modules-and-drivers/led-strips/led-strips-rgbw-rgb/led-strips-for-premium-applications/outdoor-applications/high-performance-ip67-protected-rgbw-led-strips-with-1000-lmm-for-high-requirements-c332829?productId=319460">LEDVANCE 高性能 IP67 RGBW 灯带</a></li>
+<li><a href="https://hitlights.com/products/24v-cob-led-strip-light-32ft.js">HitLights 24V COB 灯带 32.8ft</a></li>
+<li><a href="https://store.waveformlighting.com/products/absolute-series-led-flexible-strip-99-cri-16-ft-5-m-reel.js">Waveform ABSOLUTE 系列 CRI 99 灯带（4oz 铜箔）</a></li>
+<li><a href="https://store.waveformlighting.com/products/ultra-high-95-cri-led-strip-lights-for-home-residential.js">Waveform CENTRIC HOME CRI 95 灯带</a></li>
+<li><a href="https://www.philips-hue.com/en-ca/p/hue-white-and-color-ambiance-lightstrip-plus-base-v4-80-inch/046677555313">Philips Hue Lightstrip Plus V4</a></li>
+<li><a href="https://www.philips-hue.com/en-ca/products/smart-ceiling-lights/how-to-install-led-strips-on-the-ceiling">Philips Hue：天花板灯带安装指南</a></li>
+<li><a href="https://store.yeelight.com/collections/smart-led-strip/products/yeelight-smart-led-lightstrip-pro.js">Yeelight Smart Lightstrip Pro</a></li>
+<li><a href="https://www.mi.com/de/product/xiaomi-smart-lightstrip-pro/specs/">小米 Smart Lightstrip Pro 规格</a></li>
+<li><a href="https://partner.aqara.com/products/aqara-led-strip-t1-copy.js">Aqara LED Strip T1（Zigbee 3.0）</a></li>
+<li><a href="https://www.lifx.com/products/lightstrip-80-kit.js">LIFX Lightstrip 80 Kit</a></li>
+<li><a href="https://us.govee.com/products/govee-cob-strip-light-pro">Govee COB Strip Light Pro</a></li>
+<li><a href="https://www.superbrightleds.com/led-strips-and-bars/5m-ultra-high-97-cri-led-strip-light-lux-tape-light-24v-up-to-768-lm-ft-single-white-2700k-3000k-3500k-4000k-5000k-6500k+color-warm~2700k">SuperBrightLEDs 超高 CRI 97 灯带</a></li>
+<li><a href="https://www.superbrightleds.com/led-strips-and-bars/not-weatherproof-indoor-led-strip-lights/stn-x0k98-c8a-10e5m-24v+color-cool~5000k">SuperBrightLEDs 室内灯带</a></li>
+<li><a href="https://www.superlightingled.com/blog/smd-led-comparison-2216-vs-2835-vs-3014-strip-lights/">SMD 灯带封装对比：2216 vs 2835 vs 3014</a></li>
+<li><a href="https://www.diodeled.com/what-is-voltage-drop/">Diode LED：什么是电压降（含图表）</a></li>
+<li><a href="https://novaflexled.com/wp-content/uploads/2024/10/NF-Voltage-Drop-Chart.pdf">NovaFlex LED 电压降图表（PDF）</a>（该站对部分地区返回 403）</li>
+<li><a href="https://gladiatorlighting.com/products/diode-led-di-24v-stmlt2-27-100">Diode LED Streamlite 24V 灯带</a></li>
+<li><a href="https://flexfireleds.com/products/ultrabright-accent-white-led-strip-light/">FlexFire LEDs 超亮重点照明白光灯带</a></li>
+<li><a href="https://www.lumistrips.eu/post/methods-of-ip-protection-for-flexible-led-strips">柔性灯带的 IP 防护方法（滴胶/套管/灌胶/挤出）</a></li>
+</ul>
+
+<h3>控制协议与调光</h3>
+<ul>
+<li><a href="https://www.moons.com.cn/medias/LED-Version1106.pdf">鸣志（MOONS'）DALI 调光驱动技术资料（PDF）</a>（注：该 PDF 链接在部分网络环境下返回 400，可改从鸣志官网检索）</li>
+<li><a href="http://www.euchips.cn/news/20220829.shtml">DALI 调光技术说明（国内厂商）</a></li>
+<li><a href="https://www.dali-alliance.org/">DALI Alliance 官方（DALI-2 / D4i 规范）</a></li>
+<li><a href="https://standards-qa21.ieee.org/ieee/1789/4479/">IEEE 1789-2015《LED 调制电流引起闪烁的健康影响》标准页</a></li>
+<li><a href="https://bscw.bund.de/pub/bscw.cgi/193290000/Lichtquellen_Flimmern_Erwin_2017_10_EN.pdf">光源闪烁专题报告（德文机构 PDF，英文版）</a></li>
+<li><a href="https://www.energy.gov/eere/ssl/flicker">DOE 固态照明：闪烁（Flicker）研究专题</a></li>
+<li><a href="https://www.energy.gov/eere/ssl/solid-state-lighting">DOE 固态照明（SSL）项目主页</a></li>
+</ul>
+
+<h3>显色、光生物安全与国际标准</h3>
+<ul>
+<li><a href="https://www.energy.gov/sites/default/files/2016/04/f30/royer-tm30-color-lightfair2016.pdf">DOE：TM-30 色彩度量方法（LightFair 2016，PDF）</a></li>
+<li><a href="https://www.energy.gov/sites/default/files/2019/02/f59/swenson-bar_ssl-rd2019_0.pdf">DOE：SSL 研发进展报告（PDF）</a></li>
+<li><a href="https://backend.orbit.dtu.dk/ws/files/239586420/CIE_TN_012_2021.pdf">CIE TN 012:2021 技术说明（PDF）</a></li>
+<li><a href="https://webstore.iec.ch/en/publication/28906">IEC 62471 光生物安全标准（IEC Webstore）</a></li>
+<li><a href="https://www.seoulsemicon.com/cn/media/sun/238">首尔半导体 SunLike 自然光谱 LED</a></li>
+<li><a href="https://seoulsemicon.com/jp/media/newsroom/237">Seoul Semiconductor SunLike 新闻稿</a></li>
+<li><a href="https://dev.semiconductor-today.com/news_items/2014/OCT/SORAA_061014.shtml">Soraa（GaN-on-GaN）技术报道</a></li>
+<li><a href="https://www.govinfo.gov/content/pkg/FR-2012-04-09/html/2012-8469.htm">美国 DOE：LED 产品寿命与 L70 定义相关文件</a></li>
+</ul>
+
+<h3>行业动态与市场</h3>
+<ul>
+<li><a href="https://www.trendforce.cn/presscenter/news/20250804-12660.html">TrendForce：三安光电拟收购 Lumileds（2025-08）</a></li>
+<li><a href="https://www.ledinside.cn/knowledge/20161212-40272.html">LEDinside：LED 封装与显色技术知识</a></li>
+<li><a href="https://www.cali-light.com/news/26372">中国照明电器协会（CALI）行业资讯</a></li>
+<li><a href="https://www.lightingchina.com.cn/news/149354.html">中国照明网行业报道</a></li>
+<li><a href="https://www.lightingchina.com.cn/news/48553.html">中国照明网：LED 技术报道</a></li>
+<li><a href="https://www.lightingchina.com.cn/news/58923.html">中国照明网：照明设计报道</a></li>
+<li><a href="https://www.lightingchina.com.cn/News/168801.html">中国照明网：标准与抽查报道</a></li>
+<li><a href="https://gile.gymf.com.cn/newslist/industrynews/80294">广州国际照明展（GILE）行业资讯</a></li>
+<li><a href="https://gile.gymf.com.cn/newslist/industrynews/80325">GILE：行业资讯</a></li>
+<li><a href="https://gile.gymf.com.cn/newslist/industrynews/80684">GILE：行业资讯</a></li>
+<li><a href="https://gile.gymf.com.cn/newslist/industrynews/80688">GILE：行业资讯</a></li>
+<li><a href="https://gile.gymf.com.cn/newslist/industrynews/80693">GILE：行业资讯</a></li>
+<li><a href="https://gile.gymf.com.cn/newslist/industrynews/80696">GILE：行业资讯</a></li>
+<li><a href="https://gile.gymf.com.cn/newslist/industrynews/80674">GILE：照明技术趋势</a></li>
+<li><a href="https://www.anytesting.com/news/1913800.html">标准与检测资讯</a></li>
+<li><a href="https://www.biaozhun.org/html/363000.html">标准信息服务</a></li>
+</ul>
+
+<h3>设计与安装实务</h3>
+<ul>
+<li><a href="https://seeddesign.cn/news-cn/builtintype-vs-bulbtype/">嵌入式 vs 灯泡式灯具对比</a></li>
+<li><a href="https://www.huayilighting.com/">华艺照明官网（导轨/磁吸系统）</a></li>
+<li><a href="https://juyeahome.com/products/detail/65/">灯具安装实务参考</a></li>
+<li><a href="http://ice-light.com/answering-questions/6396.html">照明设计问答</a></li>
+<li><a href="https://m.ithome.com/html/1008071.htm">ITHome：智能照明 / 米家中枢网关相关报道</a></li>
+<li><a href="https://m.ithome.com/html/801666.htm">ITHome：智能家居协议报道</a></li>
+<li><a href="https://detail.meizu.com/item/liprossd.html">lipro 智能照明产品页</a></li>
+<li><a href="https://www.suning.com/itemcanshu/0000000000/12368314860.html">苏宁：灯具参数页</a></li>
+<li><a href="https://www.mymro.cn/u-23B3105.html">工业品渠道灯具参数</a></li>
+<li><a href="https://jiangjianjia.net/h-nd-334.html">家居照明布线实务</a></li>
+<li><a href="https://mip.flposl.com/companyproductdetail_354755384.htm">灯具产品参数页</a></li>
+<li><a href="https://ecc.co.nz/product/palco-medium-led">iGuzzini Palco 系列参考</a></li>
+<li><a href="http://gzhxaq.com/mydata/law/202104/14/16184127767089.htm">电气安装安全相关法规资料</a></li>
+<li><a href="https://cgj.sz.gov.cn/attachment/1/1096/1096282/2076205.pdf">地方建设主管部门照明相关文件（PDF）</a></li>
+<li><a href="https://m.bjnews.com.cn/detail/1741055525168239.html">媒体：无主灯设计与照明消费报道</a></li>
+<li><a href="https://m.thepaper.cn/newsDetail_forward_27006610">澎湃：照明消费与产品报道</a></li>
+<li><a href="https://www.sohu.com/a/545393745_120092525">照明设计与装修实务文章</a></li>
+<li><a href="https://wap.alighting.cn/webapp/view.aspx?CategoryID=1&ContentID=84727">阿拉丁照明网文章</a></li>
+<li><a href="https://wap.alighting.cn/webapp/view.aspx?ContentID=173558&CategoryID=5">阿拉丁照明网：照明设计</a></li>
+<li><a href="https://decor.lazada.com.ph/magnetic-vs-traditional-track-lighting-key-differences-and-how-to-choose-ph/">磁吸轨道 vs 传统轨道：关键差异与选择</a></li>
+<li><a href="https://eprofishop.de/item/STANDARD_4054659/datasheet">灯具数据表参考</a></li>
+<li><a href="http://gupa.gbsware.cn/upload/system/ClauseByelaws/gbt%200028/clause_7.1.4.pdf">标准条文参考（PDF）</a></li>
+<li><a href="https://multimedia.3m.com/mws/media/692274O/tape-ds-template.pdf">3M 双面胶（300LSE / 9495LE）技术数据表</a></li>
+</ul>
+
+<blockquote>
+<p><strong>关于链接有效性：</strong>本指南的链接在编写时均可访问。厂商产品页会随产品线更新而下线（尤其是国内品牌官网），标准类链接相对稳定。关键数值建议以<strong>现行标准正式出版物</strong>为准。</p>
+<p><strong>本指南标注"待核实"的项目汇总：</strong>国内在售型号的 CBCP 实测值；R9 / TM-30 Rf·Rg / Duv 的公开值；ERCO、Soraa、iGuzzini、Delta Light 具体型号参数；西顿磁吸、欧普国内官网、佛山/立达信/朗德万斯/松下/小米的逐型号参数；蜂窝格栅光损失百分比；变压器余量倍数与轨道最大负载上限；住宅 LPD 现行值；Dim-to-Warm 与变焦国产品的在售实测；IEEE 1789 分段公式原文；IEC 62471 发射限值表；3:1 / 5:1 照度配比的标准出处。（已在本轮定稿中补齐：GB/T 50034-2024 全文条款、IK 代码标准号 GB/T 20138-2023 与 GB/Z 30418-2013、IP 代码 GB/T 4208。）</p>
+</blockquote>
+
+<p style="text-align:center;color:#6d6a64;font-size:.85em;margin-top:60px;padding-top:24px;border-top:1px solid var(--line);">
+LED 光源选购与灯光设计指南 · 筒灯 / 射灯 / 灯带<br>
+主要依据 GB/T 50034-2024 与 GB 55016-2021；产品数据以厂商公开规格与 DIALux 光度库为准。<br>
+价格均为量级参考，随渠道与促销波动。
+</p>
+
+</div>
+</body>
+</html>
