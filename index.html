@@ -224,6 +224,48 @@ MF 维护系数（新装 0.9 / 清洁环境 0.8 / 少维护 0.7 / 厨房油烟�
 <p><strong>§4.3.3</strong>：有视觉显示终端（VDT，即看电视/显示器）的场所，与灯具中垂线成 65°–90° 范围内的灯具平均亮度限值：屏幕亮度 &gt;200 cd/m² 时，亮背景暗字体 ≤3000 cd/m²、暗背景亮字体 ≤1500 cd/m²；屏幕 ≤200 cd/m² 时分别为 1500 / 1000 cd/m²。</p>
 </blockquote>
 
+<figure>
+<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <text x="450" y="18" text-anchor="middle" font-size="14" font-weight="700" fill="#2b4f63">遮光角 α：决定你能不能一眼看到发光面</text>
+  <g>
+    <rect x="16" y="32" width="424" height="252" rx="10" fill="#fdf3f2" stroke="#c98b83"/>
+    <text x="228" y="56" text-anchor="middle" font-size="13.5" font-weight="700" fill="#8c4a41">✗ 扁平 / 浅杯 · α ≈ 20°</text>
+    <rect x="46" y="180" width="364" height="9" fill="#dcd6cc"/>
+    <path d="M84 180 L84 156 L216 156 L216 180" fill="#fff" stroke="#3d6d87" stroke-width="2"/>
+    <rect x="140" y="156" width="20" height="8" rx="2" fill="#ffd88a" stroke="#b8792a"/>
+    <line x1="160" y1="160" x2="300" y2="160" stroke="#8a8a82" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="160" y1="160" x2="216" y2="180" stroke="#b8792a" stroke-width="1.6"/>
+    <path d="M205 160 A 45 45 0 0 1 202 176" fill="none" stroke="#b8792a" stroke-width="1.3"/>
+    <text x="224" y="176" font-size="12" fill="#8a5a12">α≈20°</text>
+    <path d="M140 166 L52 272 M160 166 L308 272" fill="none" stroke="#b8792a" stroke-width="1" opacity=".4"/>
+    <line x1="150" y1="160" x2="312" y2="246" stroke="#c98b83" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <ellipse cx="320" cy="252" rx="17" ry="10" fill="#fff" stroke="#5c3a36" stroke-width="1.5"/>
+    <circle cx="320" cy="252" r="4.6" fill="#5c3a36"/>
+    <text x="228" y="278" text-anchor="middle" font-size="12.5" fill="#8c4a41">视线能直接看到发光面 → 眩光</text>
+  </g>
+  <g transform="translate(448,0)">
+    <rect x="16" y="32" width="424" height="252" rx="10" fill="#f2f7f4" stroke="#7fa88f"/>
+    <text x="228" y="56" text-anchor="middle" font-size="13.5" font-weight="700" fill="#245240">✓ 深杯防眩 · α ≈ 45°</text>
+    <rect x="46" y="180" width="364" height="9" fill="#dcd6cc"/>
+    <path d="M107 180 L107 141 L193 141 L193 180" fill="#fff" stroke="#3d6d87" stroke-width="2"/>
+    <rect x="142" y="141" width="16" height="8" rx="2" fill="#ffd88a" stroke="#b8792a"/>
+    <line x1="158" y1="145" x2="300" y2="145" stroke="#8a8a82" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="158" y1="145" x2="193" y2="180" stroke="#b8792a" stroke-width="1.6"/>
+    <path d="M203 145 A 45 45 0 0 1 190 177" fill="none" stroke="#b8792a" stroke-width="1.3"/>
+    <text x="196" y="170" font-size="12" fill="#8a5a12">α≈45°</text>
+    <path d="M142 152 L74 272 M158 152 L286 272" fill="none" stroke="#b8792a" stroke-width="1" opacity=".4"/>
+    <line x1="150" y1="145" x2="193" y2="172" stroke="#c98b83" stroke-width="1.8" stroke-dasharray="6 4"/>
+    <path d="M186 165 L200 179 M200 165 L186 179" stroke="#c98b83" stroke-width="2.2"/>
+    <line x1="193" y1="172" x2="312" y2="246" stroke="#c98b83" stroke-width="1" opacity=".35" stroke-dasharray="4 6"/>
+    <ellipse cx="320" cy="252" rx="17" ry="10" fill="#fff" stroke="#245240" stroke-width="1.5"/>
+    <circle cx="320" cy="252" r="4.6" fill="#245240"/>
+    <text x="228" y="278" text-anchor="middle" font-size="12.5" fill="#245240">发光面被杯壁挡住 → 见光不见灯</text>
+  </g>
+</svg>
+<figcaption>遮光角 α 是"光源边缘到灯具出光口边缘的连线"与水平线的夹角：灯具越深、出光口越小，α 越大。GB/T 50034-2024 表 4.3.1-1 要求发光体平均亮度 &gt;500 kcd/m² 时 α ≥30°；家装筒射灯的 LED 普遍落在 &gt;50 kcd/m² 档，选深杯（≥30°，优选 45°）才不会一抬头就晃眼。</figcaption>
+</figure>
+
+
 <h3>0.7 频闪：PstLM 与 SVM（国标强制）</h3>
 
 <div class="tw">
@@ -241,6 +283,43 @@ MF 维护系数（新装 0.9 / 清洁环境 0.8 / 少维护 0.7 / 厨房油烟�
 <blockquote class="no">
 <p><strong>手机相机测频闪只能粗筛。</strong>CMOS 滚动快门与光源调制频率混叠，几乎所有灯都可能拍出条纹 —— 它既可能拍到人眼看不到的高频波动，也可能漏掉真实问题。<strong>真正能作为验收依据的是厂家提供的 PstLM / SVM 实测报告（IEC TR 61547-1 方法）</strong>，不是"无可视频闪"四个字。</p>
 </blockquote>
+
+<figure>
+<svg viewBox="0 0 900 290" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <text x="450" y="18" text-anchor="middle" font-size="14" font-weight="700" fill="#2b4f63">光输出波形：决定"闪不闪"的是波动深度与频率</text>
+  <g>
+    <rect x="14" y="34" width="284" height="240" rx="10" fill="#f2f7f4" stroke="#7fa88f"/>
+    <text x="156" y="58" text-anchor="middle" font-size="13" font-weight="700" fill="#245240">✓ 直流 / 高质量恒流</text>
+    <line x1="30" y1="170" x2="282" y2="170" stroke="#c9c5bd" stroke-width="1"/>
+    <path d="M40 170 q12 -5 24 0 q12 5 24 0 q12 -5 24 0 q12 5 24 0 q12 -5 24 0 q12 5 24 0 q12 -5 24 0 q12 5 24 0 q12 -5 24 0 q12 5 24 0 " fill="none" stroke="#7fa88f" stroke-width="2.4"/>
+    <text x="156" y="216" text-anchor="middle" font-size="12.5" fill="#2f4a3d">波动深度 &lt;5%</text>
+    <text x="156" y="240" text-anchor="middle" font-size="12.5" fill="#2f4a3d">PstLM / SVM 极低</text>
+    <text x="156" y="262" text-anchor="middle" font-size="11.5" fill="#6d6a64">纹波被驱动滤平</text>
+  </g>
+  <g>
+    <rect x="308" y="34" width="284" height="240" rx="10" fill="#fdf3f2" stroke="#c98b83"/>
+    <text x="450" y="58" text-anchor="middle" font-size="13" font-weight="700" fill="#8c4a41">✗ 100Hz 工频纹波</text>
+    <line x1="324" y1="170" x2="576" y2="170" stroke="#c9c5bd" stroke-width="1"/>
+    <path d="M334 170 q12 -34 24 0 q12 34 24 0 q12 -34 24 0 q12 34 24 0 q12 -34 24 0 q12 34 24 0 q12 -34 24 0 q12 34 24 0 q12 -34 24 0 q12 34 24 0 " fill="none" stroke="#c98b83" stroke-width="2.4"/>
+    <line x1="370" y1="132" x2="370" y2="208" stroke="#c98b83" stroke-width="1" stroke-dasharray="3 3"/>
+    <path d="M370 132 l-5 8 h10 z M370 208 l-5 -8 h10 z" fill="#c98b83"/>
+    <text x="382" y="176" font-size="12" fill="#8c4a41">波动深度大</text>
+    <text x="450" y="240" text-anchor="middle" font-size="12.5" fill="#8c4a41">可见闪烁 · 头痛 · 视疲劳</text>
+    <text x="450" y="262" text-anchor="middle" font-size="11.5" fill="#6d6a64">低成本阻容降压驱动的典型波形</text>
+  </g>
+  <g>
+    <rect x="602" y="34" width="284" height="240" rx="10" fill="#fff8ec" stroke="#e0b25c"/>
+    <text x="744" y="58" text-anchor="middle" font-size="13" font-weight="700" fill="#8a5a12">✓ 高频 PWM（&gt;3kHz）</text>
+    <line x1="618" y1="170" x2="870" y2="170" stroke="#c9c5bd" stroke-width="1"/>
+    <path d="M628 170 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 q4 -8 8 0 q4 8 8 0 " fill="none" stroke="#b8792a" stroke-width="1.8"/>
+    <text x="744" y="216" text-anchor="middle" font-size="12.5" fill="#8a5a12">频率高 → 人眼不可分辨</text>
+    <text x="744" y="240" text-anchor="middle" font-size="12.5" fill="#8a5a12">IEEE 1789 低风险区</text>
+    <text x="744" y="262" text-anchor="middle" font-size="11.5" fill="#6d6a64">影院 / 慢动作拍摄需 10kHz 以上</text>
+  </g>
+</svg>
+<figcaption>三种典型光输出波形。判定频闪要看两个数：波动深度（幅度）与频率。国标用 <strong>PstLM ≤1</strong>（&lt;80Hz 可见闪烁）与 <strong>SVM ≤1.3</strong>（80Hz 以上不可见频闪，儿童青少年场所 ≤1.0）说话；手机相机拍出的条纹只能粗筛，不能作为验收依据。</figcaption>
+</figure>
+
 
 <h3>0.8 蓝光危害与光生物安全</h3>
 
@@ -491,6 +570,38 @@ MF 维护系数（新装 0.9 / 清洁环境 0.8 / 少维护 0.7 / 厨房油烟�
 <p><strong>"黄圈 / 蓝芯 / 暗区"是怎么来的：</strong>COB 发光面尺寸偏大而瓦数偏小、芯片排列不均匀，加上二次光学设计不合理，导致荧光粉转换光与蓝光在空间上分离 —— 中心偏冷（蓝芯）、边缘偏黄（黄圈）、中间出现暗区。<strong>判断方法：把灯对着白墙 1m 处点亮，看光斑从中心到边缘是否有色差。</strong>这是现场 30 秒就能做的质检。</p>
 </blockquote>
 
+<figure>
+<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <text x="450" y="18" text-anchor="middle" font-size="14" font-weight="700" fill="#2b4f63">两条光路：折射（TIR）与反射（反光杯）</text>
+  <g>
+    <rect x="16" y="32" width="424" height="252" rx="10" fill="#f2f7f4" stroke="#7fa88f"/>
+    <text x="228" y="56" text-anchor="middle" font-size="13.5" font-weight="700" fill="#245240">TIR 透镜（PMMA 全内反射）</text>
+    <polygon points="196,250 150,112 270,112 224,250" fill="#dfeaf5" stroke="#3d6d87" stroke-width="2"/>
+    <path d="M196 250 Q 210 224 224 250" fill="none" stroke="#3d6d87" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <rect x="200" y="246" width="20" height="8" rx="2" fill="#ffd88a" stroke="#b8792a"/>
+    <line x1="150" y1="254" x2="270" y2="254" stroke="#8a8a82" stroke-width="2"/>
+    <line x1="150" y1="112" x2="270" y2="112" stroke="#3d6d87" stroke-width="3"/>
+    <polyline points="210,246 210,112" fill="none" stroke="#b8792a" stroke-width="1.6"/>
+    <polyline points="210,246 176,190 176,112" fill="none" stroke="#b8792a" stroke-width="1.6"/>
+    <polyline points="210,246 244,190 244,112" fill="none" stroke="#b8792a" stroke-width="1.6"/>
+    <text x="228" y="276" text-anchor="middle" font-size="12.5" fill="#2f4a3d">透光率约 93% · 效率 &gt;90% · 光斑边界干净</text>
+  </g>
+  <g transform="translate(448,0)">
+    <rect x="16" y="32" width="424" height="252" rx="10" fill="#faf8f4" stroke="#e6e2da"/>
+    <text x="228" y="56" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b8792a">反光杯（镜面铝 / 真空镀膜）</text>
+    <path d="M151 112 C 161 190 191 246 211 252 L 271 252 C 251 246 221 190 231 112 Z" fill="#dcd6cc" stroke="#8a7a55" stroke-width="2"/>
+    <rect x="201" y="246" width="20" height="8" rx="2" fill="#ffd88a" stroke="#b8792a"/>
+    <line x1="151" y1="112" x2="311" y2="112" stroke="#8a7a55" stroke-width="3"/>
+    <polyline points="211,250 211,112" fill="none" stroke="#b8792a" stroke-width="1.6"/>
+    <polyline points="211,250 171,190 171,112" fill="none" stroke="#b8792a" stroke-width="1.6"/>
+    <polyline points="211,250 251,190 251,112" fill="none" stroke="#b8792a" stroke-width="1.6"/>
+    <text x="228" y="276" text-anchor="middle" font-size="12.5" fill="#6d6a64">中心光强 CBCP 高 · 易现黄圈 / 边缘色差</text>
+  </g>
+</svg>
+<figcaption>左：TIR 透镜靠"折射 + 全内反射"收光，光损小、边界清晰，一般无副光斑，适合 &lt;60° 窄角，是射灯主流。右：反光杯靠金属反射面收光，中心光强更高，但镜面铝易出黄圈与边缘色差；真空镀膜优于普通铝膜，哑光铝最柔和但光强略降。</figcaption>
+</figure>
+
+
 <h3>2.6 防眩技术路线对比</h3>
 
 <div class="tw">
@@ -517,6 +628,33 @@ MF 维护系数（新装 0.9 / 清洁环境 0.8 / 少维护 0.7 / 厨房油烟�
 <blockquote class="no">
 <p><strong>避坑：</strong>对比不同品牌的光束角前，先确认它们的定义口径。更可靠的做法是<strong>直接看配光曲线（.ldt / .ies 文件）或 DIALux 光度库数据</strong>，而不是信包装上的角度数字。窄角（10–15°）用于挑高空间与重点打亮；24–36° 是 2.6–3m 层高的主力；60° 用于泛光。</p>
 </blockquote>
+
+<figure>
+<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <rect x="16" y="32" width="868" height="252" rx="10" fill="#faf8f4" stroke="#e6e2da"/>
+  <text x="450" y="58" text-anchor="middle" font-size="13.5" font-weight="700" fill="#2b4f63">同一只灯：50% 口径与 10% 口径可以差 1.5–2 倍</text>
+  <line x1="70" y1="250" x2="830" y2="250" stroke="#c9c5bd" stroke-width="1.5"/>
+  <text x="450" y="268" text-anchor="middle" font-size="11.5" fill="#6d6a64">相对光轴的角度 →</text>
+  <path d="M110 250 C 250 248 320 85 450 85 C 580 85 650 248 790 250" fill="none" stroke="#b8792a" stroke-width="2.6"/>
+  <line x1="120" y1="168" x2="800" y2="168" stroke="#3d6d87" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="806" y="172" font-size="11.5" fill="#3d6d87">50% 峰值</text>
+  <line x1="330" y1="168" x2="330" y2="250" stroke="#3d6d87" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="570" y1="168" x2="570" y2="250" stroke="#3d6d87" stroke-width="1" stroke-dasharray="3 3"/>
+  <path d="M330 158 L330 178 M570 158 L570 178 M330 168 L570 168" stroke="#3d6d87" stroke-width="1.4"/>
+  <path d="M336 163 L336 173 L346 168 z M564 163 L564 173 L554 168 z" fill="#3d6d87"/>
+  <text x="450" y="152" text-anchor="middle" font-size="12.5" font-weight="700" fill="#2b4f63">beam angle ≈ 24°</text>
+  <line x1="120" y1="233" x2="800" y2="233" stroke="#8a8a82" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="806" y="237" font-size="11.5" fill="#6d6a64">10% 峰值</text>
+  <line x1="195" y1="233" x2="195" y2="250" stroke="#8a8a82" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="705" y1="233" x2="705" y2="250" stroke="#8a8a82" stroke-width="1" stroke-dasharray="3 3"/>
+  <path d="M195 223 L195 243 M705 223 L705 243 M195 233 L705 233" stroke="#8a8a82" stroke-width="1.4"/>
+  <path d="M201 228 L201 238 L211 233 z M699 228 L699 238 L689 233 z" fill="#8a8a82"/>
+  <text x="450" y="217" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6d6a64">field angle ≈ 50°</text>
+  <text x="450" y="288" text-anchor="middle" font-size="12" fill="#8c4a41">厂商标"光束角"可能用 50% 也可能用 10% 峰值口径 —— 24° 的灯写成 50° 不算造假，但会误导选型</text>
+</svg>
+<figcaption>配光曲线与两个口径。<strong>beam angle</strong> 按光强降至峰值 50% 的两侧夹角，<strong>field angle</strong> 按 10% 峰值。对比不同品牌前必须确认口径；更可靠的做法是直接看配光曲线（.ldt / .ies 文件）或 DIALux 光度库数据。</figcaption>
+</figure>
+
 
 <hr />
 
@@ -698,6 +836,44 @@ MF 维护系数（新装 0.9 / 清洁环境 0.8 / 少维护 0.7 / 厨房油烟�
 <blockquote>
 <p><strong>预埋尺寸参考：</strong>三雄极光预埋轨道截面约 71×53mm、吸顶款约 28×53mm、单根最长约 3m；华艺"律动"导轨条约 L1000×W72.6×H55.3mm；欧普轨道裁剪时最小保留长度约 300mm。<strong>预埋轨道必须在吊顶封板前定位，且与龙骨冲突是常见问题 —— 水电交底时要拿实物去现场比对。</strong></p>
 </blockquote>
+
+<figure>
+<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <text x="450" y="18" text-anchor="middle" font-size="14" font-weight="700" fill="#2b4f63">轨道截面：为什么磁吸能做到"只见一条缝"</text>
+  <g>
+    <rect x="16" y="32" width="424" height="252" rx="10" fill="#faf8f4" stroke="#e6e2da"/>
+    <text x="228" y="56" text-anchor="middle" font-size="13.5" font-weight="700" fill="#2b4f63">传统高压轨道 · 220V</text>
+    <rect x="120" y="74" width="180" height="160" rx="4" fill="#fff" stroke="#3d6d87" stroke-width="2"/>
+    <rect x="136" y="90" width="148" height="128" rx="3" fill="#faf8f4" stroke="#e6e2da"/>
+    <rect x="142" y="96" width="60" height="10" rx="3" fill="#b8792a"/>
+    <rect x="218" y="96" width="60" height="10" rx="3" fill="#b8792a"/>
+    <rect x="142" y="202" width="60" height="10" rx="3" fill="#b8792a"/>
+    <rect x="218" y="202" width="60" height="10" rx="3" fill="#b8792a"/>
+    <text x="340" y="106" font-size="11.5" fill="#8a5a12">铜导体</text>
+    <text x="340" y="212" font-size="11.5" fill="#8a5a12">四线制</text>
+    <text x="210" y="258" text-anchor="middle" font-size="12.5" fill="#3d6d87">截面约 36 × 32 mm</text>
+    <rect x="180" y="234" width="60" height="40" rx="4" fill="#e8eef2" stroke="#3d6d87" stroke-width="1.6"/>
+    <text x="210" y="259" text-anchor="middle" font-size="11" fill="#2b4f63">适配器</text>
+    <text x="228" y="278" text-anchor="middle" font-size="11.5" fill="#6d6a64">市电直接进轨道 · 制式互不通用</text>
+  </g>
+  <g transform="translate(448,0)">
+    <rect x="16" y="32" width="424" height="252" rx="10" fill="#f2f7f4" stroke="#7fa88f"/>
+    <text x="228" y="56" text-anchor="middle" font-size="13.5" font-weight="700" fill="#245240">磁吸轨道 · 24V / 48V 低压</text>
+    <rect x="106" y="112" width="216" height="56" rx="3" fill="#fff" stroke="#7fa88f" stroke-width="2"/>
+    <rect x="112" y="118" width="204" height="12" rx="3" fill="#9aa5ab"/>
+    <rect x="112" y="152" width="204" height="10" rx="3" fill="#b8792a"/>
+    <text x="336" y="126" font-size="11" fill="#5a6266">磁条</text>
+    <text x="336" y="160" font-size="11" fill="#8a5a12">铜触点</text>
+    <text x="214" y="192" text-anchor="middle" font-size="12.5" fill="#245240">截面约 27 × 7 mm</text>
+    <rect x="150" y="204" width="130" height="34" rx="5" fill="#e8eef2" stroke="#7fa88f" stroke-width="1.6"/>
+    <text x="215" y="226" text-anchor="middle" font-size="11" fill="#245240">磁吸模块（可随时移位）</text>
+    <text x="228" y="262" text-anchor="middle" font-size="11.5" fill="#2f4a3d">可明装 / 嵌入石膏板 · 模块自由组合</text>
+    <text x="228" y="278" text-anchor="middle" font-size="11.5" fill="#8c4a41">与 220V 高压轨物理、电气均不兼容</text>
+  </g>
+</svg>
+<figcaption>同比例截面对比：传统高压轨道约 36×32mm（Eutrac 三相，max 16A），磁吸轨道可做到约 27×7mm（如 Yeelight M22），因此能嵌进石膏板只留一条缝。代价是磁吸同功率比传统轨道贵 20–40%，且各品牌互不通用、变压器需留检修位。</figcaption>
+</figure>
+
 
 <h3>4.3 光学指标：CBCP 与照度的换算</h3>
 
@@ -881,6 +1057,33 @@ P_load = 灯带长度 L(m) × 每米功率 (W/m)</code></pre>
 
 <p><strong>长度初筛：</strong>12V 单端供电 ≤5m、24V ≤10m（HitLights 官方 FAQ 亦建议 COB 灯带单端 ≤5m、整卷两端供电）。超长必须<strong>两端供电或多点注入</strong>。</p>
 
+<figure>
+<svg viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <text x="450" y="18" text-anchor="middle" font-size="14" font-weight="700" fill="#2b4f63">电压降：尾端为什么会变暗，以及三种解法</text>
+  <text x="450" y="40" text-anchor="middle" font-size="11.5" fill="#6d6a64">同一段 5m 灯带，越往右越暗 = 压降越大（圆点深浅表示实际亮度）</text>
+  <g>
+    <text x="205" y="62" font-size="12.5" font-weight="700" fill="#8c4a41">✗ 12V 单端供电</text>
+    <text x="860" y="62" text-anchor="end" font-size="12.5" fill="#8c4a41">压降约 4.0%%（超标）</text>
+    <rect x="100" y="50" width="90" height="40" rx="5" fill="#e8eef2" stroke="#3d6d87" stroke-width="1.6"/><text x="145" y="75" text-anchor="middle" font-size="11" fill="#2b4f63">电源</text><rect x="205" y="50" width="660" height="24" rx="6" fill="#faf8f4" stroke="#e6e2da"/><circle cx="215" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="245" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.97"/><circle cx="276" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.93"/><circle cx="306" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.90"/><circle cx="337" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.87"/><circle cx="367" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.83"/><circle cx="398" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.80"/><circle cx="428" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.77"/><circle cx="459" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.73"/><circle cx="489" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.70"/><circle cx="520" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.67"/><circle cx="550" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.63"/><circle cx="581" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.60"/><circle cx="611" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.57"/><circle cx="642" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.53"/><circle cx="672" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.50"/><circle cx="703" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.47"/><circle cx="733" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.43"/><circle cx="764" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.40"/><circle cx="794" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.37"/><circle cx="825" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.33"/><circle cx="855" cy="62" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.30"/>
+  </g>
+  <g>
+    <text x="205" y="132" font-size="12.5" font-weight="700" fill="#8a5a12">△ 24V 单端供电</text>
+    <text x="860" y="132" text-anchor="end" font-size="12.5" fill="#8a5a12">压降约 2.0%%（合格）</text>
+    <rect x="100" y="120" width="90" height="40" rx="5" fill="#e8eef2" stroke="#3d6d87" stroke-width="1.6"/><text x="145" y="145" text-anchor="middle" font-size="11" fill="#2b4f63">电源</text><rect x="205" y="120" width="660" height="24" rx="6" fill="#faf8f4" stroke="#e6e2da"/><circle cx="215" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="245" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.99"/><circle cx="276" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.97"/><circle cx="306" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.96"/><circle cx="337" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.95"/><circle cx="367" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.93"/><circle cx="398" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.92"/><circle cx="428" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.91"/><circle cx="459" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.89"/><circle cx="489" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.88"/><circle cx="520" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.87"/><circle cx="550" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.85"/><circle cx="581" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.84"/><circle cx="611" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.83"/><circle cx="642" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.81"/><circle cx="672" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.80"/><circle cx="703" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.79"/><circle cx="733" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.77"/><circle cx="764" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.76"/><circle cx="794" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.75"/><circle cx="825" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.73"/><circle cx="855" cy="144" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="0.72"/>
+  </g>
+  <g>
+    <text x="205" y="202" font-size="12.5" font-weight="700" fill="#245240">✓ 两端供电 / 多点注入</text>
+    <text x="800" y="202" text-anchor="end" font-size="12.5" fill="#245240">首尾一致</text>
+    <rect x="100" y="190" width="90" height="40" rx="5" fill="#e8eef2" stroke="#3d6d87" stroke-width="1.6"/><text x="145" y="215" text-anchor="middle" font-size="11" fill="#2b4f63">电源</text><rect x="205" y="190" width="600" height="24" rx="6" fill="#faf8f4" stroke="#e6e2da"/><circle cx="215" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="246" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="276" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="307" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="337" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="368" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="398" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="429" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="459" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="490" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="520" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="551" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="581" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="612" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="642" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="673" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="703" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="734" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="764" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="795" cy="214" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/>
+    <rect x="805" y="190" width="90" height="40" rx="5" fill="#e8eef2" stroke="#3d6d87" stroke-width="1.6"/>
+    <text x="850" y="215" text-anchor="middle" font-size="11" fill="#2b4f63">电源</text>
+  </g>
+  <text x="450" y="262" text-anchor="middle" font-size="12" fill="#6d6a64">ΔV = 2 × ρ × L × I / A     ρ ≈ 0.0175 Ω·mm²/m     照明支路建议压降 ≤ 3%%</text>
+</svg>
+<figcaption>恒压灯带靠限流电阻工作，尾端电压一低就变暗。<strong>同功率下 24V 的电流只有 12V 的一半，压降也更低</strong>。长度初筛：12V 单端 ≤5m、24V ≤10m；超长必须两端供电或多点注入。电源容量按 P ≥ P_load × 1.2~1.3 留余量。</figcaption>
+</figure>
+
+
 <h3>5.4 密度、功率与 lm/m</h3>
 
 <blockquote>
@@ -898,6 +1101,39 @@ P_load = 灯带长度 L(m) × 每米功率 (W/m)</code></pre>
 </tbody>
 </table>
 </div>
+
+<figure>
+<svg viewBox="0 0 900 230" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <text x="450" y="18" text-anchor="middle" font-size="14" font-weight="700" fill="#2b4f63">灯珠密度决定"颗不颗粒"，不决定亮度</text>
+  <g>
+    <text x="20" y="49" font-size="12.5" fill="#6d6a64">30 / 60 珠每米</text>
+    <rect x="200" y="34" width="660" height="22" rx="6" fill="#faf8f4" stroke="#e6e2da"/>
+    <circle cx="215" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="268" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="320" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="372" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="425" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="478" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="530" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="582" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="635" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="688" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="740" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="792" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="845" cy="45" r="5" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/>
+    <text x="860" y="49" text-anchor="end" font-size="11.5" fill="#8c4a41">明显颗粒感 → 必须深槽隐藏</text>
+  </g>
+  <g>
+    <text x="20" y="99" font-size="12.5" fill="#6d6a64">72 / 90 / 120 珠每米</text>
+    <rect x="200" y="84" width="660" height="22" rx="6" fill="#faf8f4" stroke="#e6e2da"/>
+    <circle cx="213" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="239" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="266" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="292" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="319" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="345" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="372" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="398" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="424" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="451" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="477" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="504" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="530" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="556" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="583" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="609" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="636" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="662" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="688" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="715" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="741" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="768" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="794" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="821" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="847" cy="95" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/>
+    <text x="860" y="99" text-anchor="end" font-size="11.5" fill="#8a5a12">较连续 → 灯槽 / 柜下主力</text>
+  </g>
+  <g>
+    <text x="20" y="149" font-size="12.5" fill="#6d6a64">144 / 180 / 240 珠每米</text>
+    <rect x="200" y="134" width="660" height="22" rx="6" fill="#faf8f4" stroke="#e6e2da"/>
+    <circle cx="211" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="224" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="238" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="251" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="264" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="277" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="291" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="304" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="317" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="331" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="344" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="357" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="370" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="384" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="397" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="410" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="424" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="437" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="450" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="464" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="477" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="490" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="503" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="517" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="530" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="543" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="557" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="570" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="583" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="596" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="610" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="623" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="636" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="650" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="663" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="676" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="690" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="703" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="716" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="729" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="743" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="756" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="769" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="783" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="796" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="809" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="822" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="836" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="849" cy="145" r="2.6" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/>
+    <text x="860" y="149" text-anchor="end" font-size="11.5" fill="#245240">连续 → 近距离可见 / 浅槽</text>
+  </g>
+  <g>
+    <text x="20" y="199" font-size="12.5" fill="#6d6a64">COB（数百芯每米）</text>
+    <rect x="200" y="184" width="660" height="22" rx="6" fill="#ffd88a" stroke="#b8792a"/>
+    <text x="530" y="199" text-anchor="middle" font-size="11.5" fill="#8a5a12">无颗粒 · 一条连续光带</text>
+    <text x="860" y="199" text-anchor="end" font-size="11.5" fill="#245240">浅槽 / 明装线性灯 / 镜前</text>
+  </g>
+  <text x="450" y="222" text-anchor="middle" font-size="11.5" fill="#6d6a64">密度 ≠ 亮度：120 珠/m 的低功率灯带可以比 60 珠/m 的暗 —— 唯一可比的是 lm/m</text>
+</svg>
+<figcaption>密度只影响"看不看得见一颗颗灯珠"。浅槽、明装线性灯、镜前灯必须选高密度或 COB；藏在深灯槽里做间接照明，60–120 珠/m 就够。亮度一律看 lm/m（每米光通量）。</figcaption>
+</figure>
+
 
 <p>常见功率档：<strong>4.8 / 7.2 / 9.6 / 12 / 14.4 / 19.2 / 24 W/m</strong>。家用氛围照明 5–10 W/m 通常足够；作为主要照明（如灯槽反光灯）需 10–20 W/m。</p>
 
@@ -1032,6 +1268,38 @@ P_load = 灯带长度 L(m) × 每米功率 (W/m)</code></pre>
 </table>
 </div>
 
+<figure>
+<svg viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <text x="450" y="18" text-anchor="middle" font-size="14" font-weight="700" fill="#2b4f63">无主灯布灯平面：三组灯各管一件事</text>
+  <rect x="90" y="52" width="720" height="268" rx="4" fill="#fff" stroke="#3d6d87" stroke-width="2.5"/>
+  <text x="450" y="344" text-anchor="middle" font-size="11.5" fill="#6d6a64">示意平面（非等比）：客厅约 4.5 × 3.5 m</text>
+  <line x1="90" y1="90" x2="810" y2="90" stroke="#e6e2da" stroke-width="1"/>
+  <text x="98" y="84" font-size="11.5" fill="#b8792a">洗墙射灯：离墙 20–30cm、间距 60–80cm、24°–36°</text>
+  <circle cx="150" cy="72" r="8" fill="#fff" stroke="#b8792a" stroke-width="2"/><circle cx="150" cy="72" r="3.4" fill="#b8792a"/><circle cx="250" cy="72" r="8" fill="#fff" stroke="#b8792a" stroke-width="2"/><circle cx="250" cy="72" r="3.4" fill="#b8792a"/><circle cx="350" cy="72" r="8" fill="#fff" stroke="#b8792a" stroke-width="2"/><circle cx="350" cy="72" r="3.4" fill="#b8792a"/><circle cx="450" cy="72" r="8" fill="#fff" stroke="#b8792a" stroke-width="2"/><circle cx="450" cy="72" r="3.4" fill="#b8792a"/><circle cx="550" cy="72" r="8" fill="#fff" stroke="#b8792a" stroke-width="2"/><circle cx="550" cy="72" r="3.4" fill="#b8792a"/><circle cx="650" cy="72" r="8" fill="#fff" stroke="#b8792a" stroke-width="2"/><circle cx="650" cy="72" r="3.4" fill="#b8792a"/><circle cx="750" cy="72" r="8" fill="#fff" stroke="#b8792a" stroke-width="2"/><circle cx="750" cy="72" r="3.4" fill="#b8792a"/>
+  <circle cx="150" cy="110" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="150" cy="110" r="4" fill="#b8792a"/><circle cx="302" cy="110" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="302" cy="110" r="4" fill="#b8792a"/><circle cx="454" cy="110" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="454" cy="110" r="4" fill="#b8792a"/><circle cx="606" cy="110" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="606" cy="110" r="4" fill="#b8792a"/><circle cx="758" cy="110" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="758" cy="110" r="4" fill="#b8792a"/><circle cx="150" cy="190" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="150" cy="190" r="4" fill="#b8792a"/><circle cx="302" cy="190" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="302" cy="190" r="4" fill="#b8792a"/><circle cx="454" cy="190" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="454" cy="190" r="4" fill="#b8792a"/><circle cx="606" cy="190" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="606" cy="190" r="4" fill="#b8792a"/><circle cx="758" cy="190" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="758" cy="190" r="4" fill="#b8792a"/><circle cx="150" cy="270" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="150" cy="270" r="4" fill="#b8792a"/><circle cx="302" cy="270" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="302" cy="270" r="4" fill="#b8792a"/><circle cx="454" cy="270" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="454" cy="270" r="4" fill="#b8792a"/><circle cx="606" cy="270" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="606" cy="270" r="4" fill="#b8792a"/><circle cx="758" cy="270" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/><circle cx="758" cy="270" r="4" fill="#b8792a"/>
+  <line x1="150" y1="330" x2="302" y2="330" stroke="#3d6d87" stroke-width="1.4"/>
+  <path d="M150 325 L150 335 M302 325 L302 335" stroke="#3d6d87" stroke-width="1.4"/>
+  <text x="226" y="348" text-anchor="middle" font-size="11.5" fill="#2b4f63">筒灯间距 90–120cm</text>
+  <line x1="90" y1="150" x2="150" y2="150" stroke="#3d6d87" stroke-width="1.4"/>
+  <path d="M95 145 L95 155 M145 145 L145 155" stroke="#3d6d87" stroke-width="1.4"/>
+  <text x="120" y="140" text-anchor="middle" font-size="11" fill="#2b4f63">离墙</text>
+  <text x="120" y="166" text-anchor="middle" font-size="11" fill="#2b4f63">30–50cm</text>
+  <rect x="90" y="52" width="720" height="9" fill="#ffd88a" opacity=".55"/>
+  <text x="450" y="48" font-size="11.5" fill="#8a5a12">灯槽 / 灯带（间接光，抬顶棚亮度）</text>
+  <circle cx="150" cy="110" r="9" fill="#fff" stroke="#3d6d87" stroke-width="2"/>
+  <circle cx="150" cy="110" r="4" fill="#b8792a"/>
+  <rect x="628" y="222" width="168" height="88" rx="6" fill="#faf8f4" stroke="#e6e2da"/>
+  <circle cx="646" cy="240" r="6" fill="#fff" stroke="#3d6d87" stroke-width="1.6"/><circle cx="646" cy="240" r="2.6" fill="#b8792a"/>
+  <text x="660" y="244" font-size="11.5" fill="#6d6a64">筒灯：环境照明</text>
+  <circle cx="646" cy="262" r="6" fill="#fff" stroke="#b8792a" stroke-width="1.6"/><circle cx="646" cy="262" r="2.6" fill="#b8792a"/>
+  <text x="660" y="266" font-size="11.5" fill="#6d6a64">射灯：洗墙 / 重点</text>
+  <rect x="640" y="282" width="12" height="6" fill="#ffd88a"/>
+  <text x="660" y="290" font-size="11.5" fill="#6d6a64">灯带：氛围 / 间接光</text>
+</svg>
+<figcaption>典型无主灯布灯：筒灯按 90–120cm 网格铺环境光（离墙 30–50cm，约每 2–2.5㎡ 一只 7–9W），洗墙射灯沿墙 20–30cm、间距 60–80cm，灯槽灯带负责抬顶棚亮度避免"洞穴效应"。数量最终仍要用 0.2 的平均照度公式核算，设计照度允许偏差 +20%（§4.1.5）。</figcaption>
+</figure>
+
+
 <h3>6.4 反光灯槽的做法</h3>
 
 <div class="tw">
@@ -1047,6 +1315,35 @@ P_load = 灯带长度 L(m) × 每米功率 (W/m)</code></pre>
 </tbody>
 </table>
 </div>
+
+<figure>
+<svg viewBox="0 0 900 330" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <text x="450" y="18" text-anchor="middle" font-size="14" font-weight="700" fill="#2b4f63">反光灯槽剖面：三个尺寸做对就不出错</text>
+  <rect x="40" y="46" width="30" height="270" fill="#dcd6cc"/>
+  <text x="55" y="330" text-anchor="middle" font-size="11" fill="#6d6a64">墙</text>
+  <rect x="70" y="46" width="790" height="16" fill="#e8e4dc" stroke="#c9c5bd"/>
+  <text x="470" y="42" text-anchor="middle" font-size="11.5" fill="#6d6a64">顶棚（被照亮的面）</text>
+  <rect x="70" y="212" width="220" height="14" fill="#efe9df" stroke="#c9c5bd"/>
+  <rect x="290" y="112" width="14" height="114" fill="#efe9df" stroke="#c9c5bd"/>
+  <rect x="84" y="198" width="192" height="12" rx="4" fill="#ffd88a" stroke="#b8792a"/>
+  <circle cx="96" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="111" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="127" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="142" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="157" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="172" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="188" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="203" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="218" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="233" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="249" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/><circle cx="264" cy="204" r="4" fill="#ffd88a" stroke="#b8792a" stroke-width="0.8" opacity="1.00"/>
+  <path d="M180 194 L180 70 M240 194 L240 70 M120 194 L120 80" stroke="#b8792a" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <path d="M468 74 L560 130 M468 74 L600 100 M468 74 L540 170" stroke="#b8792a" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="480" y="66" font-size="11.5" fill="#8a5a12">光打到顶棚再反射进房间</text>
+  <line x1="70" y1="248" x2="290" y2="248" stroke="#3d6d87" stroke-width="1.4"/>
+  <path d="M70 243 L70 253 M290 243 L290 253" stroke="#3d6d87" stroke-width="1.4"/>
+  <text x="180" y="268" text-anchor="middle" font-size="12" fill="#2b4f63">槽宽 ≈ 出光口 200mm 较好</text>
+  <text x="180" y="286" text-anchor="middle" font-size="11" fill="#6d6a64">100mm 光会困在槽内；居住空间不宜 &gt;300mm</text>
+  <line x1="330" y1="112" x2="330" y2="212" stroke="#3d6d87" stroke-width="1.4"/>
+  <path d="M325 112 L335 112 M325 212 L335 212" stroke="#3d6d87" stroke-width="1.4"/>
+  <text x="340" y="166" font-size="12" fill="#2b4f63">挡板高度 ≈100mm</text>
+  <text x="340" y="184" font-size="11" fill="#6d6a64">≥50mm 才能遮住灯珠</text>
+  <text x="180" y="316" text-anchor="middle" font-size="11.5" fill="#245240">灯带居中装于槽底 · 必须配铝槽散热</text>
+  <text x="470" y="230" font-size="11.5" fill="#8c4a41">✗ 灯带贴外侧 / 槽太浅 → 直视灯珠、见颗粒</text>
+</svg>
+<figcaption>反光灯槽三要素：① 出光口（槽宽）200mm 左右效果较好，太窄光困在槽内、太宽会看见灯珠；② 挡板高度 ≥100mm（至少 50mm）才能遮住发光面；③ 灯带居中装在槽底并配铝槽散热，柔性灯带不得裸贴石膏板。功率按被照面宽度选：&lt;500mm 约 10 W/m，&gt;500mm 约 20 W/m。</figcaption>
+</figure>
+
 
 <h3>6.5 分空间照度与色温速查表</h3>
 
@@ -1234,6 +1531,56 @@ P_load = 灯带长度 L(m) × 每米功率 (W/m)</code></pre>
 <blockquote class="no">
 <p><strong>三条规定：</strong>① 装修阶段<strong>所有开关底盒必须预留零线</strong>（这是唯一事后无法弥补的决策）；② 单火版与零火版<strong>不能混用</strong>；③ 选了智能灯就要接受"开关不能关" —— 正确做法是<strong>用智能开关/无线场景面板替代传统通断开关</strong>，或把物理开关换成可回弹的场景面板。</p>
 </blockquote>
+
+<figure>
+<svg viewBox="0 0 900 290" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Helvetica, sans-serif">
+  <text x="450" y="18" text-anchor="middle" font-size="14" font-weight="700" fill="#2b4f63">单火 vs 零火：差一根线，差一个稳定性</text>
+  <g>
+    <rect x="16" y="32" width="424" height="242" rx="10" fill="#fdf3f2" stroke="#c98b83"/>
+    <text x="228" y="56" text-anchor="middle" font-size="13.5" font-weight="700" fill="#8c4a41">✗ 单火开关（底盒无零线）</text>
+    <line x1="46" y1="110" x2="46" y2="230" stroke="#c98b83" stroke-width="2.5"/>
+    <text x="46" y="100" text-anchor="middle" font-size="12" fill="#8c4a41">L 火线</text>
+    <line x1="46" y1="110" x2="120" y2="110" stroke="#5c3a36" stroke-width="2"/>
+    <rect x="120" y="86" width="90" height="48" rx="6" fill="#fff" stroke="#c98b83" stroke-width="2"/>
+    <text x="165" y="115" text-anchor="middle" font-size="11.5" fill="#8c4a41">单火开关</text>
+    <line x1="210" y1="110" x2="300" y2="110" stroke="#5c3a36" stroke-width="2"/>
+    <circle cx="318" cy="110" r="18" fill="#ffd88a" stroke="#b8792a" stroke-width="2"/>
+    <text x="318" y="146" text-anchor="middle" font-size="11" fill="#6d6a64">LED 灯</text>
+    <line x1="336" y1="110" x2="410" y2="110" stroke="#5c3a36" stroke-width="2"/>
+    <line x1="410" y1="110" x2="410" y2="230" stroke="#3d6d87" stroke-width="2.5"/>
+    <text x="410" y="100" text-anchor="middle" font-size="12" fill="#2b4f63">N 零线</text>
+    <path d="M120 134 C 150 200 380 200 410 134" fill="none" stroke="#c98b83" stroke-width="1.6" stroke-dasharray="6 5"/>
+    <text x="228" y="222" text-anchor="middle" font-size="12" fill="#8c4a41">关灯后微电流仍经灯具构成回路</text>
+    <text x="228" y="246" text-anchor="middle" font-size="11.5" fill="#5c3a36">带载 ≤5W 时闪烁、鬼火、断连</text>
+    <text x="228" y="266" text-anchor="middle" font-size="11.5" fill="#6d6a64">开关只有 2 个接线端：L 进 / L 出</text>
+  </g>
+  <g transform="translate(448,0)">
+    <rect x="16" y="32" width="424" height="242" rx="10" fill="#f2f7f4" stroke="#7fa88f"/>
+    <text x="228" y="56" text-anchor="middle" font-size="13.5" font-weight="700" fill="#245240">✓ 零火开关（底盒预留零线）</text>
+    <line x1="46" y1="110" x2="46" y2="230" stroke="#c98b83" stroke-width="2.5"/>
+    <text x="46" y="100" text-anchor="middle" font-size="12" fill="#8c4a41">L 火线</text>
+    <line x1="46" y1="110" x2="120" y2="110" stroke="#5c3a36" stroke-width="2"/>
+    <rect x="120" y="86" width="90" height="62" rx="6" fill="#fff" stroke="#7fa88f" stroke-width="2"/>
+    <text x="165" y="112" text-anchor="middle" font-size="11.5" fill="#245240">零火开关</text>
+    <text x="165" y="132" text-anchor="middle" font-size="11" fill="#245240">（独立供电）</text>
+    <line x1="210" y1="110" x2="300" y2="110" stroke="#5c3a36" stroke-width="2"/>
+    <circle cx="318" cy="110" r="18" fill="#ffd88a" stroke="#b8792a" stroke-width="2"/>
+    <text x="318" y="146" text-anchor="middle" font-size="11" fill="#6d6a64">LED 灯</text>
+    <line x1="336" y1="110" x2="410" y2="110" stroke="#5c3a36" stroke-width="2"/>
+    <line x1="410" y1="110" x2="410" y2="230" stroke="#3d6d87" stroke-width="2.5"/>
+    <text x="410" y="100" text-anchor="middle" font-size="12" fill="#2b4f63">N 零线</text>
+    <line x1="410" y1="176" x2="165" y2="176" stroke="#3d6d87" stroke-width="2"/>
+    <line x1="165" y1="148" x2="165" y2="176" stroke="#3d6d87" stroke-width="2"/>
+    <circle cx="165" cy="176" r="4" fill="#3d6d87"/>
+    <text x="290" y="168" font-size="11" fill="#2b4f63">零线进底盒</text>
+    <text x="228" y="222" text-anchor="middle" font-size="12" fill="#245240">开关由零线独立取电，灯具不流微电流</text>
+    <text x="228" y="246" text-anchor="middle" font-size="11.5" fill="#2f4a3d">稳定 · 可带 200W+ · 无鬼火</text>
+    <text x="228" y="266" text-anchor="middle" font-size="11.5" fill="#6d6a64">必须在装修阶段把零线拉进每个底盒</text>
+  </g>
+</svg>
+<figcaption>单火开关靠关灯后流经灯具的微电流维持自身供电，因此 LED 瓦数太小（≤5W）就会闪烁或掉线；零火开关由底盒零线独立供电，稳定且可带 200W 以上。<strong>底盒预留零线是装修阶段唯一事后无法弥补的决策</strong>，且单火版与零火版不能混用。</figcaption>
+</figure>
+
 
 <p><strong>国标对控制系统的要求：</strong>§7.3.9 场景切换响应时间 &lt;1s；§7.3.8 断电重启后应恢复到断电前的场景或默认场景。</p>
 
