@@ -6,11 +6,7 @@
 
 ## 在线阅读（GitHub Pages）
 
-启用 Pages 后访问：
-
 <https://bobhhu97.github.io/led-lighting-guide/>
-
-> 该仓库为私有仓库。私有仓库的 GitHub Pages 需要付费计划（Pro / Team / Enterprise）；免费账号下 Pages 无法对私有仓库启用，此时请改为本地打开 `index.html`，或在 GitHub 网页端直接查看该文件。
 
 ## 本地查看
 
